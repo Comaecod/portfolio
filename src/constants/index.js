@@ -109,7 +109,7 @@ const experiences = [
     company_name: 'Tata Consultancy Services',
     icon: tcs,
     iconBg: '#fff',
-    date: 'February 2020 - December 2022',
+    date: 'February 2020 - January 2023',
     points: [
       'Worked on upgrading front-end screens from Struts and JSP to React.js.',
       'Conducted thorough code reviews, collaborated with the back-end team.',

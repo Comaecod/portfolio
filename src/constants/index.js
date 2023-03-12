@@ -117,11 +117,11 @@ const experiences = [
     iconBg: '#fff',
     date: 'February 2020 - January 2023',
     points: [
-      'Worked on upgrading front-end screens from Struts and JSP to React.js.',
-      'Conducted thorough code reviews, collaborated with the back-end team.',
-      'Developed reusable components for improved code quality, fewer errors, and increased development efficiency.',
-      'This resulted in improved performance, faster rendering, and better user experience.',
-      "Upgrade led to a 30% increase in user productivity, 50% reduction in page load time which significantly improved the app's performance.",
+      'Upgraded front-end from Struts and JSP to React.js.',
+      'Conducted code reviews, collaborated with back-end team.',
+      'Developed reusable components for improved code quality, efficiency.',
+      'Resulted in faster rendering, better user experience.',
+      'Upgrade led to 30% increase in user productivity, 50% reduction in page load time.',
     ],
   },
 ];
@@ -134,7 +134,7 @@ const education = [
     iconBg: '#fff',
     date: 'Ongoing',
     description:
-      'This program provides me with the flexibility to balance my academic pursuits with my professional commitments. I have been able to deepen my knowledge of computer applications and refine my analytical skills. This program has also allowed me to explore new areas of interest, and I am eager to continue learning and expanding my skill set.',
+      'This program provides the flexibility to balance academics and work, deepen computer knowledge, refine analytical skills, and explore new interests. Eager to continue learning and expanding skill set.',
   },
   {
     title: 'Bachelor Of Vocation In Software Development',
@@ -143,7 +143,7 @@ const education = [
     iconBg: '#fff',
     date: 'July 2016 - March 2019',
     description:
-      'During my college, I was active in tech & environment initiatives. I participated in hackathons, coding comps, and environmental campaigns, expanding my skills and knowledge. I also led the student council, organizing events to improve campus life, and honed my leadership skills. To cap it off, I was first in the scholarship list all three years, showcasing my academic excellence. Overall, college offered a diverse range of experiences for personal & professional growth.',
+      'In college, I participated in tech and environment initiatives, organizing events and honing my leadership skills. I also achieved academic excellence with top scholarships all three years. These experiences allowed for personal and professional growth.',
   },
 ];
 

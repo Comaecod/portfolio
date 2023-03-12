@@ -65,7 +65,7 @@ const Contact = () => {
       );
   };
 
-  let submit = <p>Don't forget to pass your name, email, and message as props so I can render your Send button here. ;)</p>;
+  let submit = <p>Pass your name, email, and message as props so I can render your Send button. 😉</p>;
 
   if (NAME_REGEX.test(form.name) && EMAIL_REGEX.test(form.email) && form.message.trim().length > 10) {
     submit = (
@@ -101,7 +101,7 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="The name's Bond. James Bond. What's yours?"
+              placeholder="The name's Bond."
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -112,7 +112,7 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="I promise not to share your email with any aliens."
+              placeholder="Won't share your email with any aliens."
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -123,7 +123,7 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder="Let's connect and create something righteous together!"
+              placeholder="Let's connect and build awesome-ness!"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>

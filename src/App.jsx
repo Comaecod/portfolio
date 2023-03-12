@@ -20,9 +20,9 @@ const App = () => {
           <Education />
           {/* <Feedbacks /> */}
           <Contact />
-          <StarsCanvas />
+          {!/Mobile/i.test(navigator.userAgent) && <StarsCanvas />}
+          <Madeby />
         </div>
-        <Madeby />
       </div>
     </BrowserRouter>
   );

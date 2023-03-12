@@ -112,7 +112,7 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="Won't share your email with any aliens."
+              placeholder={/Mobile/i.test(navigator.userAgent) ? "The @ thingy" : "I won't share your email with any aliens."}
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -124,7 +124,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="Let's connect and build awesome-ness!"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium resize-none'
             />
           </label>
           {submit}

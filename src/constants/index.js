@@ -14,6 +14,8 @@ import {
   git,
   meraai,
   tcs,
+  jaihind,
+  sastra,
   meetups,
   quotes,
 } from '../assets';
@@ -26,6 +28,10 @@ export const navLinks = [
   {
     id: 'work',
     title: 'Work',
+  },
+  {
+    id: 'education',
+    title: 'Education',
   },
   {
     id: 'contact',
@@ -120,6 +126,27 @@ const experiences = [
   },
 ];
 
+const education = [
+  {
+    title: 'Master of Computer Applications',
+    institution_name: 'Sastra University',
+    icon: sastra,
+    iconBg: '#fff',
+    date: 'Ongoing',
+    description:
+      'This program provides me with the flexibility to balance my academic pursuits with my professional commitments. I have been able to deepen my knowledge of computer applications and refine my analytical skills. This program has also allowed me to explore new areas of interest, and I am eager to continue learning and expanding my skill set.',
+  },
+  {
+    title: 'Bachelor Of Vocation In Software Development',
+    institution_name: 'Jai Hind College',
+    icon: jaihind,
+    iconBg: '#fff',
+    date: 'July 2016 - March 2019',
+    description:
+      'During my college, I was active in tech & environment initiatives. I participated in hackathons, coding comps, and environmental campaigns, expanding my skills and knowledge. I also led the student council, organizing events to improve campus life, and honed my leadership skills. To cap it off, I was first in the scholarship list all three years, showcasing my academic excellence. Overall, college offered a diverse range of experiences for personal & professional growth.',
+  },
+];
+
 const testimonials = [
   {
     testimonial:
@@ -192,4 +219,11 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  education,
+  testimonials,
+  projects,
+};

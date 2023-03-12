@@ -24,6 +24,9 @@ import typescript from './tech/typescript.png';
 import meraai from './company/meraai.png';
 import tcs from './company/tcs.png';
 
+import sastra from './education/sastra.png';
+import jaihind from './education/jaihind.jpg';
+
 import meetups from './meetups.png';
 import quotes from './quotes.png';
 
@@ -51,6 +54,8 @@ export {
   typescript,
   meraai,
   tcs,
+  sastra,
+  jaihind,
   meetups,
   quotes,
 };

@@ -7,6 +7,9 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+const NAME_REGEX = /^[a-zA-Z ]+$/;
+const EMAIL_REGEX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -28,18 +31,17 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
 
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
-          from_name: form.name,
+          from_name: form.name.trim(),
           to_name: "Vishnu",
-          from_email: form.email,
+          from_email: form.email.trim(),
           to_email: "vishnuthecoder@gmail.com",
-          message: form.message,
+          message: form.message.trim(),
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
@@ -63,6 +65,19 @@ const Contact = () => {
       );
   };
 
+  let submit = <p>Don't forget to pass your name, email, and message as props so I can render your Send button here. ;)</p>;
+
+  if (NAME_REGEX.test(form.name) && EMAIL_REGEX.test(form.email) && form.message.trim().length > 10) {
+    submit = (
+      <button
+        type='submit'
+        className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+      >
+        {loading ? "Sending..." : "Send"}
+      </button>
+    );
+  }
+
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
@@ -72,7 +87,7 @@ const Contact = () => {
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <h3 className={styles.sectionHeadText}>Contact 🤙</h3>
 
         <form
           ref={formRef}
@@ -86,7 +101,7 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name?"
+              placeholder="The name's Bond. James Bond. What's yours?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -97,7 +112,7 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="I promise not to share your email with any aliens."
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -108,17 +123,11 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='What you want to say?'
+              placeholder="Let's connect and create something righteous together!"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
-
-          <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
+          {submit}
         </form>
       </motion.div>
 

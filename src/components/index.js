@@ -14,7 +14,7 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import CanvasLoader from './Loader';
-import Madeby from './Madeby';
+import Footer from './Footer';
 
 export {
   Hero,
@@ -26,7 +26,7 @@ export {
   Education,
   Feedbacks,
   Contact,
-  Madeby,
+  Footer,
   CanvasLoader,
   EarthCanvas,
   BallCanvas,

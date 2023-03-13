@@ -18,6 +18,12 @@ import {
   sastra,
   meetups,
   quotes,
+  jogtracker,
+  whatsapp_social,
+  linkedin_social,
+  github_social,
+  instagram_social,
+  medium_social,
 } from '../assets';
 
 export const navLinks = [
@@ -45,12 +51,12 @@ const services = [
     icon: web,
   },
   {
-    title: 'Springboot Developer',
-    icon: mobile,
-  },
-  {
     title: 'JavaScript Developer',
     icon: backend,
+  },
+  {
+    title: 'Springboot Developer',
+    icon: mobile,
   },
 ];
 
@@ -182,19 +188,19 @@ const projects = [
     tags: [
       {
         name: 'reactjs',
-        color: 'blue-text-gradient',
+        color: 'pink-text-gradient',
       },
       {
         name: 'firebase',
-        color: 'green-text-gradient',
+        color: 'blue-text-gradient',
       },
       {
         name: 'realtimeDB',
-        color: 'pink-text-gradient',
+        color: 'green-text-gradient',
       },
     ],
     image: quotes,
-    source_code_link: 'https://react-http-6e37a.web.app/',
+    live_app_link: 'https://react-http-6e37a.web.app/',
   },
   {
     name: 'Meetups',
@@ -215,7 +221,57 @@ const projects = [
       },
     ],
     image: meetups,
-    source_code_link: 'https://nextjs-meetups-gules.vercel.app/', //'https://github.com/Comaecod/nextjs-meetups',
+    source_code_link: 'https://github.com/Comaecod/nextjs-meetups',
+    live_app_link: 'https://nextjs-meetups-gules.vercel.app/',
+  },
+  {
+    name: 'JogTracker',
+    description:
+      'A backend app for jogging data, with roles, storing data, and managing users.',
+    tags: [
+      {
+        name: 'springboot',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'swagger',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'MySQL',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: jogtracker,
+    source_code_link: 'https://github.com/Comaecod/JogTracker-REST.git',
+  },
+];
+
+const social_media = [
+  {
+    link: 'https://www.linkedin.com/in/vishnu-parasuramuni-b19427190',
+    image: linkedin_social,
+    name: 'linkedin',
+  },
+  {
+    link: 'https://github.com/Comaecod',
+    image: github_social,
+    name: 'github',
+  },
+  {
+    link: 'https://www.instagram.com/comaecod/',
+    image: instagram_social,
+    name: 'instagram',
+  },
+  {
+    link: 'https://api.whatsapp.com/send/?phone=919967570182&text&type=phone_number&app_absent=0',
+    image: whatsapp_social,
+    name: 'whatsapp',
+  },
+  {
+    link: 'https://medium.com/@comaecod',
+    image: medium_social,
+    name: 'medium',
   },
 ];
 
@@ -226,4 +282,5 @@ export {
   education,
   testimonials,
   projects,
+  social_media,
 };

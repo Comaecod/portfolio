@@ -3,7 +3,7 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { link } from "../assets";
+import { link, github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -15,6 +15,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_app_link
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}    >
@@ -27,8 +28,7 @@ const ProjectCard = ({
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div
-          className='relative w-full h-[230px] cursor-pointer'
-          onClick={() => window.open(source_code_link, "_blank")}
+          className='relative w-full h-[230px]'
         >
           <img
             src={image}
@@ -37,15 +37,26 @@ const ProjectCard = ({
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              className='white-gradient w-10 h-10 rounded-full flex justify-center items-center'
+            {source_code_link && <div
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              onClick={() => window.open(source_code_link, "_blank")}
+            >
+              <img
+                src={github}
+                alt='github'
+                className='w-4/5 h-4/5 object-contain'
+              />
+            </div>}
+            {live_app_link && <div
+              className='white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              onClick={() => window.open(live_app_link, "_blank")}
             >
               <img
                 src={link}
                 alt='link'
                 className='w-1/2 h-1/2 object-contain'
               />
-            </div>
+            </div>}
           </div>
         </div>
 
@@ -84,7 +95,7 @@ const Works = () => {
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
-          links to live demos.
+          links to live demos and github repos.
         </motion.p>
       </div>
 

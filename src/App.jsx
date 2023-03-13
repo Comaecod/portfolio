@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, Madeby, Education } from "./components";
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, Footer, Education } from "./components";
 
 // For redeploying -> npm run deploy
 
@@ -21,7 +21,7 @@ const App = () => {
           {/* <Feedbacks /> */}
           <Contact />
           {!/Mobile/i.test(navigator.userAgent) && <StarsCanvas />}
-          <Madeby />
+          <Footer />
         </div>
       </div>
     </BrowserRouter>
@@ -37,7 +37,6 @@ Testimonials -> Get them from your mates(Anmol, Dheeraj, Shivangi, Anuj).
 Download CV button.
 Hard Skills
 Soft Skills
-Social Media Links(Medium, Instagram, LinkedIn, Github)
 Hobbies Section
 Certifications Section
 Gallery Section

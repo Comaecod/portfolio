@@ -29,6 +29,13 @@ import jaihind from './education/jaihind.jpg';
 
 import meetups from './meetups.png';
 import quotes from './quotes.png';
+import jogtracker from './jogtracker.jpg';
+
+import whatsapp_social from './social/whatsapp.png';
+import github_social from './social/github.png';
+import instagram_social from './social/instagram.png';
+import medium_social from './social/medium.png';
+import linkedin_social from './social/linkedin.png';
 
 export {
   logo,
@@ -58,4 +65,10 @@ export {
   jaihind,
   meetups,
   quotes,
+  jogtracker,
+  whatsapp_social,
+  github_social,
+  medium_social,
+  linkedin_social,
+  instagram_social,
 };

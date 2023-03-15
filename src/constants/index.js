@@ -24,24 +24,34 @@ import {
   github_social,
   instagram_social,
   medium_social,
+  Resume,
 } from '../assets';
 
 export const navLinks = [
   {
-    id: 'about',
+    link: '#about',
+    text: 'About',
     title: 'About',
   },
   {
-    id: 'work',
+    link: '#work',
+    text: 'Experience',
     title: 'Work',
   },
   {
-    id: 'education',
+    link: '#education',
+    text: 'Education',
     title: 'Education',
   },
   {
-    id: 'contact',
-    title: 'Contact',
+    link: '#contact',
+    text: 'Contact',
+    title: 'Contact', //'☎',
+  },
+  {
+    link: Resume,
+    text: 'Download CV',
+    title: 'CV', //'⬇',
   },
 ];
 

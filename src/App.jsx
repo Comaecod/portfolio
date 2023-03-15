@@ -1,6 +1,18 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, Footer, Education } from "./components";
+import {
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  StarsCanvas,
+  Footer,
+  Education,
+} from './components';
 
 // For redeploying -> npm run deploy
 
@@ -34,7 +46,6 @@ export default App;
 TODO
 
 Testimonials -> Get them from your mates(Anmol, Dheeraj, Shivangi, Anuj).
-Download CV button.
 Hard Skills
 Soft Skills
 Hobbies Section
@@ -43,4 +54,3 @@ Gallery Section
 Legacy Codebase projects -> GDrive (optional)
 Check LinkedIn, Old Portfolio, CV for any other relevant sections.
 */
-

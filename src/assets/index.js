@@ -37,6 +37,8 @@ import instagram_social from './social/instagram.png';
 import medium_social from './social/medium.png';
 import linkedin_social from './social/linkedin.png';
 
+import Resume from './Resume.pdf';
+
 export {
   logo,
   backend,
@@ -71,4 +73,5 @@ export {
   medium_social,
   linkedin_social,
   instagram_social,
+  Resume,
 };

@@ -20,6 +20,12 @@ import reactjs from './tech/reactjs.png';
 import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
+import next from './tech/next.png';
+import java from './tech/java.png';
+import jQuery from './tech/jQuery.png';
+import python from './tech/python.png';
+import springboot from './tech/springboot.png';
+import sql from './tech/sql.png';
 
 import meraai from './company/meraai.png';
 import tcs from './company/tcs.png';
@@ -61,6 +67,12 @@ export {
   redux,
   tailwind,
   typescript,
+  java,
+  jQuery,
+  next,
+  python,
+  springboot,
+  sql,
   meraai,
   tcs,
   sastra,

@@ -13,6 +13,7 @@ import {
   Footer,
   Education,
 } from './components';
+import HardSkills from './components/HardSkills';
 
 // For redeploying -> npm run deploy
 
@@ -24,13 +25,14 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
+        <About />
+        <Experience />
+        <HardSkills />
+        {/* {!/Mobile/i.test(navigator.userAgent) && <Tech />} */}
+        <Works />
+        <Education />
+        {/* <Feedbacks /> */}
         <div className='relative z-0'>
-          <About />
-          <Experience />
-          {!/Mobile/i.test(navigator.userAgent) && <Tech />}
-          <Works />
-          <Education />
-          {/* <Feedbacks /> */}
           <Contact />
           {!/Mobile/i.test(navigator.userAgent) && <StarsCanvas />}
           <Footer />
@@ -46,7 +48,6 @@ export default App;
 TODO
 
 Testimonials -> Get them from your mates(Anmol, Dheeraj, Shivangi, Anuj).
-Hard Skills
 Soft Skills
 Hobbies Section
 Certifications Section

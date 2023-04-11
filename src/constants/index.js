@@ -12,6 +12,12 @@ import {
   nodejs,
   mongodb,
   git,
+  java,
+  jQuery,
+  next,
+  python,
+  springboot,
+  sql,
   meraai,
   tcs,
   jaihind,
@@ -72,12 +78,8 @@ const services = [
 
 const technologies = [
   {
-    name: 'HTML 5',
-    icon: html,
-  },
-  {
-    name: 'CSS 3',
-    icon: css,
+    name: 'React.js',
+    icon: reactjs,
   },
   {
     name: 'JavaScript',
@@ -88,28 +90,52 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: 'React JS',
-    icon: reactjs,
-  },
-  {
-    name: 'Redux Toolkit',
+    name: 'Redux',
     icon: redux,
   },
   {
-    name: 'git',
-    icon: git,
+    name: 'Next.js',
+    icon: next,
   },
   {
-    name: 'Tailwind CSS',
+    name: 'HTML',
+    icon: html,
+  },
+  {
+    name: 'CSS',
+    icon: css,
+  },
+  {
+    name: 'Tailwind',
     icon: tailwind,
   },
   {
-    name: 'Node JS',
-    icon: nodejs,
+    name: 'Java',
+    icon: java,
+  },
+  {
+    name: 'Springboot',
+    icon: springboot,
+  },
+  {
+    name: 'Git',
+    icon: git,
+  },
+  {
+    name: 'SQL',
+    icon: sql,
   },
   {
     name: 'MongoDB',
     icon: mongodb,
+  },
+  {
+    name: 'Python',
+    icon: python,
+  },
+  {
+    name: 'jQuery',
+    icon: jQuery,
   },
 ];
 

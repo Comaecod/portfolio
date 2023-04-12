@@ -35,6 +35,8 @@ import {
   guitar,
   chess,
   sleuth,
+  strengths,
+  weaknesses,
 } from '../assets';
 
 export const navLinks = [
@@ -339,6 +341,33 @@ const social_media = [
   },
 ];
 
+const strengths_and_weaknesses = [
+  {
+    title: 'Assets',
+    subtitle: 'Not to brag, but these are my superhero powers!',
+    icon: strengths,
+    iconBg: '#fff',
+    type: 'Strengths',
+    points: [
+      'DEVOTION: A Pillar of Strength in Upholding Tradition',
+      'TRANSPARENCY: Being to the point, clear expressions, transparent, unequivocal.',
+      'SOUL SEARCHING: Embracing Flaws and Striving for Perfection',
+    ],
+  },
+  {
+    title: 'Limitations',
+    subtitle: "My Kryptonite List: Things I'm Working On!",
+    icon: weaknesses,
+    iconBg: '#fff',
+    type: 'Weaknesses',
+    points: [
+      'PEEVISH: I get peevish responding to people who are domineering or boorish.',
+      'GULLIBLE: At times I could be naive and gullible.',
+      "LENIENT: I consider myself 'too kind'. Many a time I am unable to say NO even when required.",
+    ],
+  },
+];
+
 export {
   services,
   technologies,
@@ -348,4 +377,5 @@ export {
   projects,
   hobbies,
   social_media,
+  strengths_and_weaknesses,
 };

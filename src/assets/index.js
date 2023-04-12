@@ -48,6 +48,9 @@ import guitar from './hobbies/guitar.png';
 import chess from './hobbies/chess.png';
 import sleuth from './hobbies/sleuth.png';
 
+import strengths from './strengths_weaknesses/strengths.png';
+import weaknesses from './strengths_weaknesses/weaknesses.png';
+
 import Resume from './Resume.pdf';
 
 export {
@@ -95,4 +98,6 @@ export {
   guitar,
   sleuth,
   Resume,
+  strengths,
+  weaknesses,
 };

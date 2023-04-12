@@ -17,6 +17,7 @@ import CanvasLoader from './Loader';
 import Footer from './Footer';
 import HardSkills from './HardSkills';
 import Hobbies from './Hobbies';
+import StrengthsAndWeaknesses from './StrengthsAndWeaknesses';
 
 export {
   Hero,
@@ -30,6 +31,7 @@ export {
   Contact,
   Footer,
   HardSkills,
+  StrengthsAndWeaknesses,
   Hobbies,
   CanvasLoader,
   EarthCanvas,

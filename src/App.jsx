@@ -14,6 +14,7 @@ import {
   Education,
   HardSkills,
   Hobbies,
+  StrengthsAndWeaknesses,
 } from './components';
 
 // For redeploying -> npm run deploy
@@ -29,14 +30,15 @@ const App = () => {
         <About />
         <Experience />
         <HardSkills />
-        {/* {!/Mobile/i.test(navigator.userAgent) && <Tech />} */}
         <Works />
         <Education />
         {/* <Feedbacks /> */}
         <Hobbies />
+        <StrengthsAndWeaknesses />
         <div className='relative z-0'>
           <Contact />
           {!/Mobile/i.test(navigator.userAgent) && <StarsCanvas />}
+          {!/Mobile/i.test(navigator.userAgent) && <Tech />}
           <Footer />
         </div>
       </div>
@@ -53,6 +55,5 @@ Testimonials -> Get them from your mates(Anmol, Dheeraj, Shivangi, Anuj).
 Soft Skills
 Certifications Section
 Gallery Section
-Legacy Codebase projects -> GDrive (optional)
 Check LinkedIn, Old Portfolio, CV for any other relevant sections.
 */

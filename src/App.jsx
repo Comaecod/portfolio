@@ -12,8 +12,9 @@ import {
   StarsCanvas,
   Footer,
   Education,
+  HardSkills,
+  Hobbies,
 } from './components';
-import HardSkills from './components/HardSkills';
 
 // For redeploying -> npm run deploy
 
@@ -32,6 +33,7 @@ const App = () => {
         <Works />
         <Education />
         {/* <Feedbacks /> */}
+        <Hobbies />
         <div className='relative z-0'>
           <Contact />
           {!/Mobile/i.test(navigator.userAgent) && <StarsCanvas />}
@@ -49,7 +51,6 @@ TODO
 
 Testimonials -> Get them from your mates(Anmol, Dheeraj, Shivangi, Anuj).
 Soft Skills
-Hobbies Section
 Certifications Section
 Gallery Section
 Legacy Codebase projects -> GDrive (optional)

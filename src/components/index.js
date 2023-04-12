@@ -15,6 +15,8 @@ import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import CanvasLoader from './Loader';
 import Footer from './Footer';
+import HardSkills from './HardSkills';
+import Hobbies from './Hobbies';
 
 export {
   Hero,
@@ -27,6 +29,8 @@ export {
   Feedbacks,
   Contact,
   Footer,
+  HardSkills,
+  Hobbies,
   CanvasLoader,
   EarthCanvas,
   BallCanvas,

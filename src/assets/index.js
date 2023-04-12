@@ -43,6 +43,11 @@ import instagram_social from './social/instagram.png';
 import medium_social from './social/medium.png';
 import linkedin_social from './social/linkedin.png';
 
+import cosmology from './hobbies/cosmology.png';
+import guitar from './hobbies/guitar.png';
+import chess from './hobbies/chess.png';
+import sleuth from './hobbies/sleuth.png';
+
 import Resume from './Resume.pdf';
 
 export {
@@ -85,5 +90,9 @@ export {
   medium_social,
   linkedin_social,
   instagram_social,
+  cosmology,
+  chess,
+  guitar,
+  sleuth,
   Resume,
 };

@@ -31,6 +31,10 @@ import {
   instagram_social,
   medium_social,
   Resume,
+  cosmology,
+  guitar,
+  chess,
+  sleuth,
 } from '../assets';
 
 export const navLinks = [
@@ -136,6 +140,25 @@ const technologies = [
   {
     name: 'jQuery',
     icon: jQuery,
+  },
+];
+
+const hobbies = [
+  {
+    name: 'Cosmology',
+    icon: cosmology,
+  },
+  {
+    name: 'Singing and Playing Guitar',
+    icon: guitar,
+  },
+  {
+    name: 'Playing Chess',
+    icon: chess,
+  },
+  {
+    name: 'Sleuth Books and Movies',
+    icon: sleuth,
   },
 ];
 
@@ -318,5 +341,6 @@ export {
   education,
   testimonials,
   projects,
+  hobbies,
   social_media,
 };

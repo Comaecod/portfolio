@@ -11,9 +11,7 @@ import { styles } from '../styles';
 const SkillCard = ({ name, icon, index }) => {
   return (
     <Tilt className='xs:w-[150px] w-full'>
-      <motion.div
-        variants={fadeIn('right', 'spring', index * 0.05, 0.75)}
-        className='w-full green-pink-gradient p-[1px] rounded-[30px] shadow-card'>
+      <div className='w-full green-pink-gradient p-[1px] rounded-[30px] shadow-card'>
         <div
           options={{
             max: 45,
@@ -30,7 +28,7 @@ const SkillCard = ({ name, icon, index }) => {
             {name}
           </h3>
         </div>
-      </motion.div>
+      </div>
     </Tilt>
   );
 };

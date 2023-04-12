@@ -54,6 +54,11 @@ export const navLinks = [
     title: 'Education',
   },
   {
+    link: '#hardSkills',
+    text: 'Skills',
+    title: 'Skills',
+  },
+  {
     link: '#contact',
     text: 'Contact',
     title: 'Contact', //'☎',
@@ -149,11 +154,11 @@ const hobbies = [
     icon: cosmology,
   },
   {
-    name: 'Singing and Playing Guitar',
+    name: 'Guitar & Singing',
     icon: guitar,
   },
   {
-    name: 'Playing Chess',
+    name: 'Chess',
     icon: chess,
   },
   {

@@ -7,7 +7,7 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 
 import { styles } from '../styles';
-import { education } from '../constants';
+import { education, portfolioSectionContent } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
 import ShouldMotionDiv from './custom/ShouldMotionDiv';
@@ -52,10 +52,10 @@ const Education = () => {
     <>
       <ShouldMotionDiv variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          Where I got my education
+          {portfolioSectionContent.education.subtitle}
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Alma Mater 🏫
+          {portfolioSectionContent.education.title}
         </h2>
       </ShouldMotionDiv>
 

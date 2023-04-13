@@ -1,7 +1,7 @@
 import React from 'react';
 import { fadeIn, textVariant } from '../utils/motion';
 
-import { hobbies } from '../constants';
+import { hobbies, portfolioSectionContent } from '../constants';
 
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
@@ -13,7 +13,7 @@ const Hobby = ({ name, icon, index }) => {
     <ShouldTilt className='xs:w-60 w-full'>
       <ShouldMotionDiv
         variants={fadeIn('right', 'spring', index * 0.05, 0.75)}
-        className='w-full green-pink-gradient p-[1px] rounded-[30px] shadow-card'>
+        className='w-full p-[1px] rounded-[30px] shadow-card'>
         <div
           options={{
             max: 45,
@@ -40,9 +40,11 @@ const Hobbies = () => {
     <>
       <ShouldMotionDiv variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          Personal Interests
+          {portfolioSectionContent.hobbies.subtitle}
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Hobbies 🚀</h2>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          {portfolioSectionContent.hobbies.title}
+        </h2>
       </ShouldMotionDiv>
       <div className='mt-20 flex flex-wrap gap-12 justify-center'>
         {hobbies.map((hobby, index) => (

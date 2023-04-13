@@ -7,7 +7,7 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 
 import { styles } from '../styles';
-import { experiences } from '../constants';
+import { experiences, portfolioSectionContent } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
 import ShouldMotionDiv from './custom/ShouldMotionDiv';
@@ -58,10 +58,10 @@ const Experience = () => {
     <>
       <ShouldMotionDiv variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
+          {portfolioSectionContent.experience.subtitle}
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience 💪
+          {portfolioSectionContent.experience.title}
         </h2>
       </ShouldMotionDiv>
 

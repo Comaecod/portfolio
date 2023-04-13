@@ -14,6 +14,7 @@ import {
   HardSkills,
   SoftSkills,
   Hobbies,
+  Feedbacks,
 } from './components';
 
 // For redeploying -> npm run deploy

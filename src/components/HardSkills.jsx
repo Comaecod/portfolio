@@ -1,7 +1,7 @@
 import React from 'react';
 import { fadeIn, textVariant } from '../utils/motion';
 
-import { technologies } from '../constants';
+import { portfolioSectionContent, technologies } from '../constants';
 
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
@@ -50,10 +50,10 @@ const HardSkills = () => {
     <>
       <ShouldMotionDiv variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          Technical Stuff
+          {portfolioSectionContent.hardSkills.subtitle}
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Hard Skills 💻
+          {portfolioSectionContent.hardSkills.title}
         </h2>
       </ShouldMotionDiv>
       <div className='mt-20 flex flex-wrap gap-12 justify-center'>

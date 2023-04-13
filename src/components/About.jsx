@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { styles } from '../styles';
-import { services } from '../constants';
+import { portfolioSectionContent, services } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 import ShouldMotionDiv from './custom/ShouldMotionDiv';
@@ -38,21 +38,18 @@ const About = () => {
   return (
     <>
       <ShouldMotionDiv variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>Introduction</p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Overview 👨‍💻</h2>
+        <p className={`${styles.sectionSubText} text-center`}>
+          {portfolioSectionContent.about.subtitle}
+        </p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          {portfolioSectionContent.about.title}
+        </h2>
       </ShouldMotionDiv>
 
       <ShouldMotionP
         variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] w-auto leading-[30px] text-center'>
-        I am an experienced frontend developer with a strong focus on React, and
-        a keen desire to learn modern technologies. I am committed to delivering
-        high-quality work and collaborating with crossfunctional teams to
-        achieve project goals. I am passionate about frontend development and
-        keen to explore opportunities in React, Next, Remix, and other modern
-        front-end technologies. If you are looking for a collaborative and
-        growth-oriented frontend developer, I would be eager to contribute my
-        expertise to your team.
+        {portfolioSectionContent.about.content}
       </ShouldMotionP>
 
       <div className='mt-20 flex flex-wrap gap-10 justify-center'>

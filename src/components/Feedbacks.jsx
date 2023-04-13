@@ -3,7 +3,7 @@ import React from 'react';
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
-import { testimonials } from '../constants';
+import { portfolioSectionContent, testimonials } from '../constants';
 import ShouldMotionDiv from './custom/ShouldMotionDiv';
 
 const FeedbackCard = ({
@@ -48,8 +48,12 @@ const Feedbacks = () => {
       <div
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}>
         <ShouldMotionDiv variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
+          <p className={styles.sectionSubText}>
+            {portfolioSectionContent.testimonials.subtitle}
+          </p>
+          <h2 className={styles.sectionHeadText}>
+            {portfolioSectionContent.testimonials.title}
+          </h2>
         </ShouldMotionDiv>
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>

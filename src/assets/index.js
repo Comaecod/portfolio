@@ -26,6 +26,7 @@ import jQuery from './tech/jQuery.png';
 import python from './tech/python.png';
 import springboot from './tech/springboot.png';
 import sql from './tech/sql.png';
+import dataStructures from './tech/dataStructures.png';
 
 import meraai from './company/meraai.png';
 import tcs from './company/tcs.png';
@@ -80,6 +81,7 @@ export {
   next,
   python,
   springboot,
+  dataStructures,
   sql,
   meraai,
   tcs,

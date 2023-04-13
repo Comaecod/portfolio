@@ -6,6 +6,7 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import ShouldMotionDiv from './custom/ShouldMotionDiv';
+import { portfolioSectionContent } from '../constants';
 
 const NAME_REGEX = /^[a-zA-Z ]+$/;
 const EMAIL_REGEX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -65,12 +66,7 @@ const Contact = () => {
       );
   };
 
-  let submit = (
-    <p>
-      Pass your name, email, and message as props so I can render your Send
-      button. 😉
-    </p>
-  );
+  let submit = <p>{portfolioSectionContent.contact.submitReplaceText}</p>;
 
   if (
     NAME_REGEX.test(form.name) &&
@@ -92,8 +88,12 @@ const Contact = () => {
       <ShouldMotionDiv
         variants={slideIn('left', 'tween', 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact 🤙</h3>
+        <p className={styles.sectionSubText}>
+          {portfolioSectionContent.contact.subtitle}
+        </p>
+        <h3 className={styles.sectionHeadText}>
+          {portfolioSectionContent.contact.title}
+        </h3>
 
         <form
           ref={formRef}

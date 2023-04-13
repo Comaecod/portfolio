@@ -1,11 +1,11 @@
 import React from 'react';
 import { SectionWrapper } from '../hoc';
-import { social_media } from '../constants';
+import { portfolioSectionContent, social_media } from '../constants';
 
 const Footer = () => {
   return (
     <footer>
-      <div className='absolute inset-0 flex justify-center m-3 card-img_hover'>
+      <div className='absolute inset-0 flex justify-center gap-3 card-img_hover'>
         {social_media.map((social) => (
           <div
             key={social.name}
@@ -21,7 +21,7 @@ const Footer = () => {
         ))}
       </div>
       <p className='text-center text-secondary text-[12px]'>
-        Made using React, Three.js, Tailwind and Framer.
+        {portfolioSectionContent.footer.content}
       </p>
     </footer>
   );

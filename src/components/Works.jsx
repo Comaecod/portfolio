@@ -3,7 +3,7 @@ import React from 'react';
 import { styles } from '../styles';
 import { link, github } from '../assets';
 import { SectionWrapper } from '../hoc';
-import { projects } from '../constants';
+import { portfolioSectionContent, projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import ShouldMotionP from './custom/ShouldMotionP';
 import ShouldMotionDiv from './custom/ShouldMotionDiv';
@@ -83,17 +83,19 @@ const Works = () => {
   return (
     <>
       <ShouldMotionDiv variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>My work</p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Projects 🎦</h2>
+        <p className={`${styles.sectionSubText} text-center`}>
+          {portfolioSectionContent.works.subtitle}
+        </p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          {portfolioSectionContent.works.title}
+        </h2>
       </ShouldMotionDiv>
 
       <div className='w-full flex'>
         <ShouldMotionP
           variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 text-secondary text-[17px] leading-[30px] text-center'>
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to live demos and github repos.
+          {portfolioSectionContent.works.content}
         </ShouldMotionP>
       </div>
 

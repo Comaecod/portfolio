@@ -37,6 +37,8 @@ import {
   sleuth,
   strengths,
   weaknesses,
+  docker,
+  dataStructures,
 } from '../assets';
 
 export const navLinks = [
@@ -76,6 +78,56 @@ export const navLinks = [
     title: 'CV', //'⬇',
   },
 ];
+
+const portfolioSectionContent = {
+  about: {
+    title: 'Overview 👨‍💻',
+    subtitle: 'Introduction',
+    content:
+      'I am an experienced frontend developer with a strong focus on React and Next, and a keen desire to learn modern technologies. I am committed to delivering high-quality work and collaborating with crossfunctional teams to achieve project goals. I am passionate about frontend development and keen to explore opportunities in React, Next, Remix, and other modern front-end technologies. If you are looking for a collaborative and growth-oriented frontend developer, I would be eager to contribute my expertise to your team.',
+  },
+  experience: {
+    title: 'Work Experience 💪',
+    subtitle: 'What I have done so far',
+  },
+  hardSkills: {
+    title: 'Hard Skills 💻',
+    subtitle: 'Technical Stuff',
+  },
+  softSkills: {
+    title: 'My Capabilities 🦸‍♂️',
+    subtitle: 'What Makes Me, Me',
+    bottomContent:
+      'I aim to embody the virtues of FORTITUDE and TEMPERANCE in any organization I join, as they are crucial for promoting positive relationships and facilitating growth and success.',
+  },
+  works: {
+    title: 'Projects 🎦',
+    subtitle: 'My work',
+    content:
+      'Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to live demos and github repos.',
+  },
+  education: {
+    title: 'Alma Mater 🏫',
+    subtitle: 'Where I got my education',
+  },
+  testimonials: {
+    title: 'Testimonials 🤝🏻',
+    subtitle: 'What others say',
+  },
+  hobbies: {
+    title: 'Hobbies 🚀',
+    subtitle: 'Personal Interests',
+  },
+  contact: {
+    title: 'Contact 🤙',
+    subtitle: 'Get in touch',
+    submitReplaceText:
+      'Pass your name, email, and message as props so I can render your Send button. 😉',
+  },
+  footer: {
+    content: 'Made using React, Three.js, Tailwind and Framer.',
+  },
+};
 
 const services = [
   {
@@ -134,6 +186,11 @@ const technologies = [
     icon: tailwind,
   },
   {
+    progress: 40,
+    name: 'Alogrithms',
+    icon: dataStructures,
+  },
+  {
     progress: 50,
     name: 'Java',
     icon: java,
@@ -168,6 +225,16 @@ const technologies = [
     name: 'jQuery',
     icon: jQuery,
   },
+  {
+    progress: 10,
+    name: 'Node.js',
+    icon: nodejs,
+  },
+  {
+    progress: 5,
+    name: 'Docker',
+    icon: docker,
+  },
 ];
 
 const hobbies = [
@@ -184,7 +251,7 @@ const hobbies = [
     icon: chess,
   },
   {
-    name: 'Sleuth Books and Movies',
+    name: 'Sleuth Movies',
     icon: sleuth,
   },
 ];
@@ -243,25 +310,49 @@ const testimonials = [
   {
     testimonial:
       'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
+    name: 'Anmol Vijayawargiya',
+    designation: 'Co-Founder',
+    company: 'Meraai',
     image: 'https://randomuser.me/api/portraits/women/4.jpg',
   },
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
+    name: 'Anuj Singh',
+    designation: 'Full Stack Developer',
+    company: 'Meraai',
     image: 'https://randomuser.me/api/portraits/men/5.jpg',
   },
   {
     testimonial:
       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
+    name: 'Dheeraj Mishra',
+    designation: 'DevOps Engineer',
+    company: 'TCS',
+    image: 'https://randomuser.me/api/portraits/women/6.jpg',
+  },
+  {
+    testimonial:
+      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
+    name: 'Shivangi Srivastava',
+    designation: 'Frontend Developer',
+    company: 'TCS',
+    image: 'https://randomuser.me/api/portraits/women/4.jpg',
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: 'Nilesh Patil',
+    designation: 'Code Review Lead',
+    company: 'SBI',
+    image: 'https://randomuser.me/api/portraits/men/5.jpg',
+  },
+  {
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: 'Jyoti Singh',
+    designation: 'Backend Engineer',
+    company: 'SBI',
     image: 'https://randomuser.me/api/portraits/women/6.jpg',
   },
 ];
@@ -365,7 +456,7 @@ const strong_points = [
   {
     title: 'DEVOTION',
     content:
-      'My top priority is God and my parents, and I approach tasks with passion and dedication, consistently delivering exceptional results.',
+      'My top priority is God, Guru and my parents. I approach tasks with passion and dedication, consistently delivering exceptional results.',
   },
   {
     title: 'SOUL SEARCHING',
@@ -422,6 +513,7 @@ const strengths_and_weaknesses = [
 ];
 
 export {
+  portfolioSectionContent,
   services,
   technologies,
   experiences,

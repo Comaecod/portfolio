@@ -1,7 +1,6 @@
-import { motion } from 'framer-motion';
-
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import ShouldMotionDiv from './custom/ShouldMotionDiv';
 
 const Hero = () => {
   return (
@@ -29,7 +28,7 @@ const Hero = () => {
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
+            <ShouldMotionDiv
               animate={{
                 y: [0, 24, 0],
               }}

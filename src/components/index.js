@@ -16,6 +16,7 @@ import Contact from './Contact';
 import CanvasLoader from './Loader';
 import Footer from './Footer';
 import HardSkills from './HardSkills';
+import SoftSkills from './SoftSkills';
 import Hobbies from './Hobbies';
 import StrengthsAndWeaknesses from './StrengthsAndWeaknesses';
 
@@ -31,6 +32,7 @@ export {
   Contact,
   Footer,
   HardSkills,
+  SoftSkills,
   StrengthsAndWeaknesses,
   Hobbies,
   CanvasLoader,

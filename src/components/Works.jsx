@@ -1,12 +1,13 @@
-import React from "react";
-import Tilt from "react-tilt";
-import { motion } from "framer-motion";
+import React from 'react';
 
-import { styles } from "../styles";
-import { link, github } from "../assets";
-import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { styles } from '../styles';
+import { link, github } from '../assets';
+import { SectionWrapper } from '../hoc';
+import { projects } from '../constants';
+import { fadeIn, textVariant } from '../utils/motion';
+import ShouldMotionP from './custom/ShouldMotionP';
+import ShouldMotionDiv from './custom/ShouldMotionDiv';
+import ShouldTilt from './custom/ShouldTilt';
 
 const ProjectCard = ({
   index,
@@ -15,21 +16,18 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-  live_app_link
+  live_app_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}    >
-      <Tilt
+    <ShouldMotionDiv variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+      <ShouldTilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
-      >
-        <div
-          className='relative w-full h-[230px]'
-        >
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'>
+        <div className='relative w-full h-[230px]'>
           <img
             src={image}
             alt={name}
@@ -37,26 +35,28 @@ const ProjectCard = ({
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            {source_code_link && <div
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-              onClick={() => window.open(source_code_link, "_blank")}
-            >
-              <img
-                src={github}
-                alt='github'
-                className='w-4/5 h-4/5 object-contain'
-              />
-            </div>}
-            {live_app_link && <div
-              className='white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-              onClick={() => window.open(live_app_link, "_blank")}
-            >
-              <img
-                src={link}
-                alt='link'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>}
+            {source_code_link && (
+              <div
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                onClick={() => window.open(source_code_link, '_blank')}>
+                <img
+                  src={github}
+                  alt='github'
+                  className='w-4/5 h-4/5 object-contain'
+                />
+              </div>
+            )}
+            {live_app_link && (
+              <div
+                className='white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                onClick={() => window.open(live_app_link, '_blank')}>
+                <img
+                  src={link}
+                  alt='link'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            )}
           </div>
         </div>
 
@@ -69,43 +69,45 @@ const ProjectCard = ({
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
+              className={`text-[14px] ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
         </div>
-      </Tilt>
-    </motion.div>
+      </ShouldTilt>
+    </ShouldMotionDiv>
   );
 };
 
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <ShouldMotionDiv variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>My work</p>
         <h2 className={`${styles.sectionHeadText} text-center`}>Projects 🎦</h2>
-      </motion.div>
+      </ShouldMotionDiv>
 
       <div className='w-full flex'>
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] leading-[30px] text-center'
-        >
+        <ShouldMotionP
+          variants={fadeIn('', '', 0.1, 1)}
+          className='mt-3 text-secondary text-[17px] leading-[30px] text-center'>
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
           links to live demos and github repos.
-        </motion.p>
+        </ShouldMotionP>
       </div>
 
       <div className='mt-20 flex flex-wrap gap-7 justify-center'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard
+            key={`project-${index}`}
+            index={index}
+            {...project}
+          />
         ))}
       </div>
     </>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, '');

@@ -1,49 +1,61 @@
 import React from 'react';
-import Tilt from 'react-tilt';
-import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 
 import { technologies } from '../constants';
 
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
+import ShouldTilt from './custom/ShouldTilt';
+import ShouldMotionDiv from './custom/ShouldMotionDiv';
 
-const SkillCard = ({ name, icon, index }) => {
+const SkillCard = ({ name, icon, progress, index }) => {
   return (
-    <Tilt className='xs:w-[150px] w-full'>
-      <div className='w-full green-pink-gradient p-[1px] rounded-[30px] shadow-card'>
+    <ShouldTilt className='xs:w-[150px] w-full'>
+      <ShouldMotionDiv
+        className='w-full p-[1px] rounded-[30px] shadow-card'
+        variants={fadeIn('right', 'spring', index * 0.05, 0.75)}>
         <div
           options={{
             max: 45,
             scale: 1,
             speed: 450,
           }}
-          className='bg-tertiary rounded-[30px] min-h-[200px] py-5 px-5 flex justify-evenly items-center flex-col'>
+          className='bg-tertiary rounded-[30px] min-h-[200px] py-4 px-4 flex justify-evenly items-center flex-col'>
           <img
             src={icon}
             alt='web-development'
             className='w-28 h-28 rounded-md object-contain'
           />
-          <h3 className='text-white text-[15px] font-bold text-center'>
-            {name}
-          </h3>
+          <div className='flex justify-center items-center space-x-2 mt-5'>
+            <h3 className='text-white text-[15px] font-bold text-center'>
+              {name}
+            </h3>
+            <h2 className='text-green-600 text-[11px] font-bold text-center'>
+              {progress + '%'}
+            </h2>
+          </div>
+          <div className='w-full h-4 bg-gray-300 rounded-full mt-4'>
+            <div
+              className={`h-full bg-violet-800 rounded-full transition-all duration-500`}
+              style={{ width: progress + '%' }}></div>
+          </div>
         </div>
-      </div>
-    </Tilt>
+      </ShouldMotionDiv>
+    </ShouldTilt>
   );
 };
 
 const HardSkills = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <ShouldMotionDiv variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           Technical Stuff
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Hard Skills 💻
         </h2>
-      </motion.div>
+      </ShouldMotionDiv>
       <div className='mt-20 flex flex-wrap gap-12 justify-center'>
         {technologies.map((technology, index) => (
           <SkillCard

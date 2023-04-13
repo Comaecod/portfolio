@@ -4,7 +4,6 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
   Hero,
   Navbar,
   Tech,
@@ -13,8 +12,8 @@ import {
   Footer,
   Education,
   HardSkills,
+  SoftSkills,
   Hobbies,
-  StrengthsAndWeaknesses,
 } from './components';
 
 // For redeploying -> npm run deploy
@@ -31,10 +30,11 @@ const App = () => {
         <Experience />
         <HardSkills />
         <Works />
+        <SoftSkills />
         <Education />
         {/* <Feedbacks /> */}
         <Hobbies />
-        <StrengthsAndWeaknesses />
+        {/* <StrengthsAndWeaknesses /> */}
         <div className='relative z-0'>
           <Contact />
           {!/Mobile/i.test(navigator.userAgent) && <StarsCanvas />}
@@ -52,8 +52,5 @@ export default App;
 TODO
 
 Testimonials -> Get them from your mates(Anmol, Dheeraj, Shivangi, Anuj).
-Soft Skills
-Certifications Section
-Gallery Section
-Check LinkedIn, Old Portfolio, CV for any other relevant sections.
+Gallery
 */

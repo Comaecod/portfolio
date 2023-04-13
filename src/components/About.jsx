@@ -1,15 +1,16 @@
 import React from 'react';
-import Tilt from 'react-tilt';
-import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { services } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
+import ShouldMotionDiv from './custom/ShouldMotionDiv';
+import ShouldMotionP from './custom/ShouldMotionP';
+import ShouldTilt from './custom/ShouldTilt';
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
+  <ShouldTilt className='xs:w-[250px] w-full'>
+    <ShouldMotionDiv
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
       <div
@@ -29,19 +30,19 @@ const ServiceCard = ({ index, title, icon }) => (
           {title}
         </h3>
       </div>
-    </motion.div>
-  </Tilt>
+    </ShouldMotionDiv>
+  </ShouldTilt>
 );
 
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <ShouldMotionDiv variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>Introduction</p>
         <h2 className={`${styles.sectionHeadText} text-center`}>Overview 👨‍💻</h2>
-      </motion.div>
+      </ShouldMotionDiv>
 
-      <motion.p
+      <ShouldMotionP
         variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] w-auto leading-[30px] text-center'>
         I am an experienced frontend developer with a strong focus on React, and
@@ -52,7 +53,7 @@ const About = () => {
         front-end technologies. If you are looking for a collaborative and
         growth-oriented frontend developer, I would be eager to contribute my
         expertise to your team.
-      </motion.p>
+      </ShouldMotionP>
 
       <div className='mt-20 flex flex-wrap gap-10 justify-center'>
         {services.map((service, index) => (

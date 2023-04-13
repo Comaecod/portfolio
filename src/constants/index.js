@@ -40,30 +40,35 @@ import {
 } from '../assets';
 
 export const navLinks = [
-  {
-    link: '#about',
-    text: 'About',
-    title: 'About',
-  },
+  // {
+  //   link: '#about',
+  //   text: 'About',
+  //   title: 'About',
+  // },
   {
     link: '#work',
     text: 'Experience',
     title: 'Work',
   },
-  {
-    link: '#education',
-    text: 'Education',
-    title: 'Education',
-  },
+  // {
+  //   link: '#education',
+  //   text: 'Education',
+  //   title: 'Education',
+  // },
   {
     link: '#hardSkills',
     text: 'Skills',
     title: 'Skills',
   },
   {
+    link: '#softSkills',
+    text: 'Capabilities',
+    title: 'Capabilities',
+  },
+  {
     link: '#contact',
     text: 'Contact',
-    title: 'Contact', //'☎',
+    title: '☎', //'☎',
   },
   {
     link: Resume,
@@ -89,62 +94,77 @@ const services = [
 
 const technologies = [
   {
+    progress: 75,
     name: 'React.js',
     icon: reactjs,
   },
   {
+    progress: 60,
     name: 'JavaScript',
     icon: javascript,
   },
   {
+    progress: 50,
     name: 'TypeScript',
     icon: typescript,
   },
   {
+    progress: 30,
     name: 'Redux',
     icon: redux,
   },
   {
+    progress: 70,
     name: 'Next.js',
     icon: next,
   },
   {
+    progress: 90,
     name: 'HTML',
     icon: html,
   },
   {
+    progress: 30,
     name: 'CSS',
     icon: css,
   },
   {
+    progress: 30,
     name: 'Tailwind',
     icon: tailwind,
   },
   {
+    progress: 50,
     name: 'Java',
     icon: java,
   },
   {
+    progress: 60,
     name: 'Springboot',
     icon: springboot,
   },
   {
+    progress: 80,
     name: 'Git',
     icon: git,
   },
   {
+    progress: 70,
     name: 'SQL',
     icon: sql,
   },
   {
+    progress: 65,
     name: 'MongoDB',
     icon: mongodb,
   },
   {
+    progress: 40,
     name: 'Python',
     icon: python,
   },
   {
+    progress: 40,
     name: 'jQuery',
     icon: jQuery,
   },
@@ -341,6 +361,39 @@ const social_media = [
   },
 ];
 
+const strong_points = [
+  {
+    title: 'DEVOTION',
+    content:
+      'My top priority is God and my parents, and I approach tasks with passion and dedication, consistently delivering exceptional results.',
+  },
+  {
+    title: 'SOUL SEARCHING',
+    content:
+      'I am willing to introspect and reflect on my experiences, which helps me to continuously learn and grow as a person.',
+  },
+  {
+    title: 'TRANSPARENCY',
+    content:
+      'I am committed to being honest and open, which allows me to build trust and establish strong relationships with others.',
+  },
+  {
+    title: 'AFFABILITY',
+    content:
+      'I am friendly and approachable, which allows me to build positive relationships with others.',
+  },
+  {
+    title: 'COMMUNICATION',
+    content:
+      'I have the ability to convey ideas and information effectively, which allows me to achieve shared goals.',
+  },
+  {
+    title: 'LEADERSHIP',
+    content:
+      'I inspire and motivate others with clear direction and guidance, leading teams towards achieving ambitious goals.',
+  },
+];
+
 const strengths_and_weaknesses = [
   {
     title: 'Assets',
@@ -378,4 +431,5 @@ export {
   hobbies,
   social_media,
   strengths_and_weaknesses,
+  strong_points,
 };

@@ -26,7 +26,7 @@ const Hobby = ({ name, icon, index }) => {
             alt='web-development'
             className='w-48 h-48 rounded-md object-contain'
           />
-          <h3 className='text-white text-[15px] font-bold text-center'>
+          <h3 className='text-white text-[15px] mt-3 font-bold text-center'>
             {name}
           </h3>
         </div>

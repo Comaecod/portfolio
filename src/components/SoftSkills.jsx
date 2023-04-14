@@ -9,10 +9,14 @@ import ShouldMotionDiv from './custom/ShouldMotionDiv';
 const SkillCard = ({ index, content, title }) => (
   <ShouldMotionDiv
     variants={fadeIn('', 'spring', index * 0.05, 0.75)}
-    className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'>
+    className='bg-black-200 border-2 border-indigo-200 border-x-indigo-500 p-10 rounded-3xl xs:w-[320px] w-full'>
     <div className='mt-1'>
-      <p className='text-white font-extrabold text-[25px] mb-3'>{title}</p>
-      <p className='text-white tracking-wider text-[18px]'>{content}</p>
+      <p className='text-white font-extrabold xs:text-[25px] text-[18px] mb-3'>
+        {title}
+      </p>
+      <p className='text-white tracking-wider xs:text-[18px] text-[15px]'>
+        {content}
+      </p>
     </div>
   </ShouldMotionDiv>
 );

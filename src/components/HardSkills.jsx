@@ -10,7 +10,7 @@ import ShouldMotionDiv from './custom/ShouldMotionDiv';
 
 const SkillCard = ({ name, icon, progress, index }) => {
   return (
-    <ShouldTilt className='xs:w-[150px] w-full'>
+    <ShouldTilt className='w-[150px]'>
       <ShouldMotionDiv
         className='w-full p-[1px] rounded-[30px] shadow-card'
         variants={fadeIn('right', 'spring', index * 0.05, 0.75)}>
@@ -30,9 +30,11 @@ const SkillCard = ({ name, icon, progress, index }) => {
             <h3 className='text-white text-[15px] font-bold text-center'>
               {name}
             </h3>
-            <h2 className='text-green-600 text-[11px] font-bold text-center'>
-              {progress + '%'}
-            </h2>
+            {!/Mobile/i.test(navigator.userAgent) && (
+              <h2 className='text-green-600 text-[11px] font-bold text-center'>
+                {progress + '%'}
+              </h2>
+            )}
           </div>
           <div className='w-full h-4 bg-gray-300 rounded-full mt-4'>
             <div
@@ -56,7 +58,7 @@ const HardSkills = () => {
           {portfolioSectionContent.hardSkills.title}
         </h2>
       </ShouldMotionDiv>
-      <div className='mt-20 flex flex-wrap gap-12 justify-center'>
+      <div className='mt-20 flex flex-wrap xs:gap-12 gap-3 justify-center'>
         {technologies.map((technology, index) => (
           <SkillCard
             key={technology.name}

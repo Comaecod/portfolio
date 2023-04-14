@@ -9,7 +9,7 @@ import ShouldMotionP from './custom/ShouldMotionP';
 import ShouldTilt from './custom/ShouldTilt';
 
 const ServiceCard = ({ index, title, icon }) => (
-  <ShouldTilt className='xs:w-[250px] w-full'>
+  <ShouldTilt className='xs:w-[250px] w-64'>
     <ShouldMotionDiv
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
@@ -19,7 +19,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
+        className='bg-tertiary rounded-[20px] xs:py-5 py-3 xs:px-12 px-5 min-h-[280px] flex justify-evenly items-center flex-col'>
         <img
           src={icon}
           alt='web-development'

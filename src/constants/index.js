@@ -67,12 +67,12 @@ export const navLinks = [
   {
     link: '#softSkills',
     text: 'Capabilities',
-    title: 'Capabilities',
+    title: 'Knacks',
   },
   {
     link: '#contact',
     text: 'Contact',
-    title: '☎', //'☎',
+    title: 'Phone', //'☎',
   },
   {
     link: Resume,
@@ -86,7 +86,7 @@ const portfolioSectionContent = {
     title: 'Overview 👨‍💻',
     subtitle: 'Introduction',
     content:
-      'I am an experienced frontend developer with a strong focus on React and Next, and a keen desire to learn modern technologies. I am committed to delivering high-quality work and collaborating with crossfunctional teams to achieve project goals. I am passionate about frontend development and keen to explore opportunities in React, Next, Remix, and other modern front-end technologies. If you are looking for a collaborative and growth-oriented frontend developer, I would be eager to contribute my expertise to your team.',
+      'My name is Vishnu, and I am a 24-year-old experienced frontend developer with a strong focus on React and Next. I have a keen desire to learn modern technologies and am committed to delivering high-quality work. I enjoy collaborating with crossfunctional teams to achieve project goals and am passionate about frontend development. I am eager to explore opportunities in React, Next, Remix, and other modern front-end technologies. If you are looking for a collaborative and growth-oriented frontend developer, I would be happy to contribute my expertise to your team.',
   },
   experience: {
     title: 'Work Experience 💪',

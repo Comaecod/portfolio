@@ -18,6 +18,16 @@
     <script
       type="module"
       src="/src/main.jsx"
-    ></script>
+    >
+      if('serviceWorker' in navigator) {
+        window.addEventListener('load'), () => {
+          navigator.serviceWorker.register('./serviceWorker.js').then((res)=> {
+            console.log('Worker Registered!');
+          }).catch((err)=> {
+            console.log('Error, Service Worker Not Registered! ', err);
+          })
+        }
+      }
+    </script>
   </body>
 </html>

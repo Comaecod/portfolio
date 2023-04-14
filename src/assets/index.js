@@ -57,6 +57,15 @@ import anmol from './testimonials/anmol.jpeg';
 
 import Resume from './Resume.pdf';
 
+import a from './carousel/1.jpg';
+import b from './carousel/2.jpg';
+import c from './carousel/3.jpg';
+import d from './carousel/4.jpg';
+import e from './carousel/5.jpg';
+import f from './carousel/6.jpg';
+import g from './carousel/7.jpg';
+import h from './carousel/8.jpg';
+
 export {
   logo,
   backend,
@@ -107,4 +116,12 @@ export {
   strengths,
   weaknesses,
   anmol,
+  a,
+  b,
+  c,
+  d,
+  e,
+  f,
+  g,
+  h,
 };

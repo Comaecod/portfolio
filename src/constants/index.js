@@ -41,6 +41,14 @@ import {
   dataStructures,
   anmol,
   carnaticClassical,
+  a,
+  b,
+  c,
+  d,
+  e,
+  f,
+  g,
+  h,
 } from '../assets';
 
 export const navLinks = [
@@ -119,6 +127,10 @@ const portfolioSectionContent = {
   hobbies: {
     title: 'Hobbies 🚀',
     subtitle: 'Personal Interests',
+  },
+  gallery: {
+    title: 'Gallery 📷',
+    subtitle: "It's me",
   },
   contact: {
     title: 'Contact 🤙',
@@ -491,6 +503,8 @@ const strong_points = [
   },
 ];
 
+const imagesCarousel = [a, b, c, d, e, f, g, h];
+
 const strengths_and_weaknesses = [
   {
     title: 'Assets',
@@ -530,4 +544,5 @@ export {
   social_media,
   strengths_and_weaknesses,
   strong_points,
+  imagesCarousel,
 };

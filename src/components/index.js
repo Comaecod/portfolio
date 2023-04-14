@@ -19,6 +19,7 @@ import HardSkills from './HardSkills';
 import SoftSkills from './SoftSkills';
 import Hobbies from './Hobbies';
 import StrengthsAndWeaknesses from './StrengthsAndWeaknesses';
+import ImageCarousel from './ImageCarousel';
 
 export {
   Hero,
@@ -35,6 +36,7 @@ export {
   SoftSkills,
   StrengthsAndWeaknesses,
   Hobbies,
+  ImageCarousel,
   CanvasLoader,
   EarthCanvas,
   BallCanvas,

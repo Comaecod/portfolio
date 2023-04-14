@@ -15,6 +15,7 @@ import {
   SoftSkills,
   Hobbies,
   Feedbacks,
+  ImageCarousel,
 } from './components';
 
 // For redeploying -> npm run deploy
@@ -35,8 +36,9 @@ const App = () => {
         <Education />
         <SoftSkills />
         {/* <StrengthsAndWeaknesses /> */}
+        <Hobbies />
+        <ImageCarousel />
         <div className='relative z-0'>
-          <Hobbies />
           <Contact />
           {!/Mobile/i.test(navigator.userAgent) && <StarsCanvas />}
           {!/Mobile/i.test(navigator.userAgent) && <Tech />}

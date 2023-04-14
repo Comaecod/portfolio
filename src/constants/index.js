@@ -95,7 +95,7 @@ const portfolioSectionContent = {
     title: 'Overview 👨‍💻',
     subtitle: 'Introduction',
     content:
-      'My name is Vishnu, and I am a 24-year-old experienced frontend developer with a strong focus on React and Next. I have a keen desire to learn modern technologies and am committed to delivering high-quality work. I enjoy collaborating with crossfunctional teams to achieve project goals and am passionate about frontend development. I am eager to explore opportunities in React, Next, Remix, and other modern front-end technologies. If you are looking for a collaborative and growth-oriented frontend developer, I would be happy to contribute my expertise to your team.',
+      'My name is Vishnu, and I am a 24-year-old experienced Fullstack Developer with a strong focus on React and Next. I have a keen desire to learn modern technologies and am committed to delivering high-quality work. I enjoy collaborating with crossfunctional teams to achieve project goals and am passionate about frontend development. I am eager to explore opportunities in React, Next, Remix, and other modern front-end technologies. If you are looking for a collaborative and growth-oriented frontend developer, I would be happy to contribute my expertise to your team.',
   },
   experience: {
     title: 'Work Experience 💪',
@@ -150,12 +150,12 @@ const services = [
     icon: web,
   },
   {
-    title: 'JavaScript Developer',
-    icon: backend,
-  },
-  {
     title: 'Springboot Developer',
     icon: mobile,
+  },
+  {
+    title: 'Fullstack Developer',
+    icon: backend,
   },
 ];
 

@@ -38,7 +38,7 @@ const SkillCard = ({ name, icon, progress, index }) => {
           </div>
           <div className='w-full h-4 bg-gray-300 rounded-full mt-4'>
             <div
-              className={`h-full bg-violet-800 rounded-full transition-all duration-500`}
+              className={`h-full bg-violet-800 rounded-l-lg transition-all duration-500`}
               style={{ width: progress + '%' }}></div>
           </div>
         </div>

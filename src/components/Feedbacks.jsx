@@ -19,7 +19,7 @@ const FeedbackCard = ({
     className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'>
     <p className='text-white font-black text-[48px]'>"</p>
 
-    <div className='mt-1'>
+    <div className='mt-1 h-[83%] w-full flex flex-col justify-between'>
       <p className='text-white tracking-wider text-[16px]'>{testimonial}</p>
 
       <div className='mt-7 flex justify-between items-center gap-1'>
@@ -56,7 +56,8 @@ const Feedbacks = () => {
           </h2>
         </ShouldMotionDiv>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
+      <div
+        className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7 justify-center`}>
         {testimonials.map((testimonial, index) => (
           <FeedbackCard
             key={testimonial.name}

@@ -54,6 +54,7 @@ import strengths from './strengths_weaknesses/strengths.png';
 import weaknesses from './strengths_weaknesses/weaknesses.png';
 
 import anmol from './testimonials/anmol.jpeg';
+import anuj from './testimonials/anuj.jpeg';
 
 import Resume from './Resume.pdf';
 
@@ -116,6 +117,7 @@ export {
   strengths,
   weaknesses,
   anmol,
+  anuj,
   a,
   b,
   c,

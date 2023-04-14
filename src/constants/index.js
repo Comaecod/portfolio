@@ -49,6 +49,7 @@ import {
   f,
   g,
   h,
+  anuj,
 } from '../assets';
 
 export const navLinks = [
@@ -130,7 +131,7 @@ const portfolioSectionContent = {
   },
   gallery: {
     title: 'Gallery 📷',
-    subtitle: "It's me",
+    subtitle: "Hey, it's me",
   },
   contact: {
     title: 'Contact 🤙',
@@ -333,46 +334,14 @@ const testimonials = [
     company: 'Meraai',
     image: anmol,
   },
-  // {
-  //   testimonial:
-  //     "I've never met a web developer who truly cares about their clients' success like Rick does.",
-  //   name: 'Anuj Singh',
-  //   designation: 'Full Stack Developer',
-  //   company: 'Meraai',
-  //   image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  // },
-  // {
-  //   testimonial:
-  //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-  //   name: 'Dheeraj Mishra',
-  //   designation: 'DevOps Engineer',
-  //   company: 'TCS',
-  //   image: 'https://randomuser.me/api/portraits/women/6.jpg',
-  // },
-  // {
-  //   testimonial:
-  //     'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-  //   name: 'Shivangi Srivastava',
-  //   designation: 'Frontend Developer',
-  //   company: 'TCS',
-  //   image: 'https://randomuser.me/api/portraits/women/4.jpg',
-  // },
-  // {
-  //   testimonial:
-  //     "I've never met a web developer who truly cares about their clients' success like Rick does.",
-  //   name: 'Nilesh Patil',
-  //   designation: 'Code Review Lead',
-  //   company: 'SBI',
-  //   image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  // },
-  // {
-  //   testimonial:
-  //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-  //   name: 'Jyoti Singh',
-  //   designation: 'Backend Engineer',
-  //   company: 'SBI',
-  //   image: 'https://randomuser.me/api/portraits/women/6.jpg',
-  // },
+  {
+    testimonial:
+      'I had the pleasure of working with Vishnu on a software project and was thoroughly impressed by his skills and professionalism. He is an exceptional developer who consistently delivers high-quality work.',
+    name: 'Anuj',
+    designation: 'Frontend Dev',
+    company: 'Meraai',
+    image: anuj,
+  },
 ];
 
 const projects = [

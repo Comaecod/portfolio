@@ -50,10 +50,3 @@ const App = () => {
 };
 
 export default App;
-
-/* 
-TODO
-
-Testimonials -> Get them from your mates(Anmol, Dheeraj, Shivangi, Anuj).
-Gallery
-*/

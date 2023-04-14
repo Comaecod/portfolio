@@ -10,7 +10,7 @@ import ShouldMotionDiv from './custom/ShouldMotionDiv';
 
 const Hobby = ({ name, icon, index }) => {
   return (
-    <ShouldTilt className='xs:w-60 w-full'>
+    <ShouldTilt className='xs:w-48 w-full'>
       <ShouldMotionDiv
         variants={fadeIn('right', 'spring', index * 0.05, 0.75)}
         className='w-full p-[1px] rounded-[30px] shadow-card'>
@@ -24,7 +24,7 @@ const Hobby = ({ name, icon, index }) => {
           <img
             src={icon}
             alt='web-development'
-            className='w-60 h-60 rounded-md object-contain'
+            className='w-48 h-48 rounded-md object-contain'
           />
           <h3 className='text-white text-[15px] font-bold text-center'>
             {name}

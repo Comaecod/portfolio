@@ -39,6 +39,8 @@ import {
   weaknesses,
   docker,
   dataStructures,
+  anmol,
+  carnaticClassical,
 } from '../assets';
 
 export const navLinks = [
@@ -112,7 +114,7 @@ const portfolioSectionContent = {
   },
   testimonials: {
     title: 'Testimonials 🤝🏻',
-    subtitle: 'What others say',
+    subtitle: 'What Others Say About My Work',
   },
   hobbies: {
     title: 'Hobbies 🚀',
@@ -146,7 +148,7 @@ const services = [
 
 const technologies = [
   {
-    progress: 75,
+    progress: 60,
     name: 'React.js',
     icon: reactjs,
   },
@@ -156,7 +158,7 @@ const technologies = [
     icon: javascript,
   },
   {
-    progress: 50,
+    progress: 40,
     name: 'TypeScript',
     icon: typescript,
   },
@@ -166,7 +168,7 @@ const technologies = [
     icon: redux,
   },
   {
-    progress: 70,
+    progress: 50,
     name: 'Next.js',
     icon: next,
   },
@@ -186,32 +188,32 @@ const technologies = [
     icon: tailwind,
   },
   {
-    progress: 40,
+    progress: 30,
     name: 'Alogrithms',
     icon: dataStructures,
   },
   {
-    progress: 50,
+    progress: 30,
     name: 'Java',
     icon: java,
   },
   {
-    progress: 60,
+    progress: 50,
     name: 'Springboot',
     icon: springboot,
   },
   {
-    progress: 80,
+    progress: 60,
     name: 'Git',
     icon: git,
   },
   {
-    progress: 70,
+    progress: 50,
     name: 'SQL',
     icon: sql,
   },
   {
-    progress: 65,
+    progress: 40,
     name: 'MongoDB',
     icon: mongodb,
   },
@@ -226,7 +228,7 @@ const technologies = [
     icon: jQuery,
   },
   {
-    progress: 10,
+    progress: 20,
     name: 'Node.js',
     icon: nodejs,
   },
@@ -243,7 +245,11 @@ const hobbies = [
     icon: cosmology,
   },
   {
-    name: 'Guitar & Singing',
+    name: 'Carnatic Classical',
+    icon: carnaticClassical,
+  },
+  {
+    name: 'Guitar',
     icon: guitar,
   },
   {
@@ -309,52 +315,52 @@ const education = [
 const testimonials = [
   {
     testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Anmol Vijayawargiya',
-    designation: 'Co-Founder',
+      "Vishnu is an exceptional Full Stack Developer with a thirst for learning and growth. His enthusiasm for trying out new things and integrating best practices into his code is truly remarkable. He is a valuable team player and his speedy grasp of new concepts and technologies make him an asset to any firm he's a part of.",
+    name: 'Anmol',
+    designation: 'CTO',
     company: 'Meraai',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
+    image: anmol,
   },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Anuj Singh',
-    designation: 'Full Stack Developer',
-    company: 'Meraai',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Dheeraj Mishra',
-    designation: 'DevOps Engineer',
-    company: 'TCS',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
-  },
-  {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Shivangi Srivastava',
-    designation: 'Frontend Developer',
-    company: 'TCS',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Nilesh Patil',
-    designation: 'Code Review Lead',
-    company: 'SBI',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Jyoti Singh',
-    designation: 'Backend Engineer',
-    company: 'SBI',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
-  },
+  // {
+  //   testimonial:
+  //     "I've never met a web developer who truly cares about their clients' success like Rick does.",
+  //   name: 'Anuj Singh',
+  //   designation: 'Full Stack Developer',
+  //   company: 'Meraai',
+  //   image: 'https://randomuser.me/api/portraits/men/5.jpg',
+  // },
+  // {
+  //   testimonial:
+  //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+  //   name: 'Dheeraj Mishra',
+  //   designation: 'DevOps Engineer',
+  //   company: 'TCS',
+  //   image: 'https://randomuser.me/api/portraits/women/6.jpg',
+  // },
+  // {
+  //   testimonial:
+  //     'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
+  //   name: 'Shivangi Srivastava',
+  //   designation: 'Frontend Developer',
+  //   company: 'TCS',
+  //   image: 'https://randomuser.me/api/portraits/women/4.jpg',
+  // },
+  // {
+  //   testimonial:
+  //     "I've never met a web developer who truly cares about their clients' success like Rick does.",
+  //   name: 'Nilesh Patil',
+  //   designation: 'Code Review Lead',
+  //   company: 'SBI',
+  //   image: 'https://randomuser.me/api/portraits/men/5.jpg',
+  // },
+  // {
+  //   testimonial:
+  //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+  //   name: 'Jyoti Singh',
+  //   designation: 'Backend Engineer',
+  //   company: 'SBI',
+  //   image: 'https://randomuser.me/api/portraits/women/6.jpg',
+  // },
 ];
 
 const projects = [

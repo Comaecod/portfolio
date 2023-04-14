@@ -48,9 +48,12 @@ import cosmology from './hobbies/cosmology.png';
 import guitar from './hobbies/guitar.png';
 import chess from './hobbies/chess.png';
 import sleuth from './hobbies/sleuth.png';
+import carnaticClassical from './hobbies/carnaticClassical.webp';
 
 import strengths from './strengths_weaknesses/strengths.png';
 import weaknesses from './strengths_weaknesses/weaknesses.png';
+
+import anmol from './testimonials/anmol.jpeg';
 
 import Resume from './Resume.pdf';
 
@@ -99,7 +102,9 @@ export {
   chess,
   guitar,
   sleuth,
+  carnaticClassical,
   Resume,
   strengths,
   weaknesses,
+  anmol,
 };

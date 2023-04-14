@@ -315,7 +315,7 @@ const education = [
       'This program provides the flexibility to balance academics and work, deepen computer knowledge, refine analytical skills, and explore new interests. Eager to continue learning and expanding skill set.',
   },
   {
-    title: 'Bachelor Of Vocation In Software Development',
+    title: 'Bachelor Of Vocation In Software Development(9.64 CGPA)',
     institution_name: 'Jai Hind College',
     icon: jaihind,
     iconBg: '#fff',

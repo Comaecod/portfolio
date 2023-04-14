@@ -202,7 +202,7 @@ const technologies = [
   },
   {
     progress: 30,
-    name: 'Alogrithms',
+    name: 'Algorithms',
     icon: dataStructures,
   },
   {

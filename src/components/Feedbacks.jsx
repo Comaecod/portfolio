@@ -17,7 +17,7 @@ const FeedbackCard = ({
 }) => (
   <ShouldMotionDiv
     variants={fadeIn('', 'spring', index * 0.5, 0.75)}
-    className='bg-black-200 p-10 rounded-3xl xs:w-[500px] w-full'>
+    className='bg-black-200 p-10 rounded-3xl xs:w-4/5 w-full xs:m-auto'>
     <p className='text-white font-black text-[48px]'>"</p>
 
     <div className='mt-1 flex flex-col'>
@@ -48,18 +48,19 @@ const Feedbacks = () => {
     dots: true,
     infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     speed: 500,
     cssEase: 'linear',
     swipeToSlide: true,
     autoplay: true,
-    // arrows: false,
+    arrows: true,
     autoplaySpeed: 5000,
-    slidesToShow: 2,
+    slidesToShow: 1,
   };
 
   return (
-    <div className={`mt-12 bg-black-100 rounded-[20px]`}>
+    <div
+      className={`mt-12 xs:m-auto bg-black-100 rounded-[20px] xs:w-3/5 w-full`}>
       <div
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}>
         <ShouldMotionDiv variants={textVariant()}>

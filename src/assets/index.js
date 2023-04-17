@@ -56,8 +56,8 @@ import weaknesses from './strengths_weaknesses/weaknesses.png';
 
 import anmol from './testimonials/anmol.jpeg';
 import anuj from './testimonials/anuj.jpeg';
-import shivangi from './testimonials/shivangi.jpeg';
-import dheeraj from './testimonials/dheeraj.jpeg';
+import shivangi from './testimonials/shivangi.jpg';
+import dheeraj from './testimonials/dheeraj.jpg';
 
 import Resume from './Resume.pdf';
 
@@ -90,6 +90,7 @@ export {
   nodejs,
   reactjs,
   redux,
+  prisma,
   tailwind,
   typescript,
   java,

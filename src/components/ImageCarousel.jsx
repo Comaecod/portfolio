@@ -21,7 +21,6 @@ function ImageCarousel() {
     autoplay: true,
     arrows: true,
     autoplaySpeed: 1500,
-    slidesToShow: 1,
   };
 
   return (

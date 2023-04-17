@@ -55,7 +55,6 @@ const Feedbacks = () => {
     autoplay: true,
     arrows: true,
     autoplaySpeed: 5000,
-    slidesToShow: 1,
   };
 
   return (

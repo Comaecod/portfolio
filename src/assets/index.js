@@ -99,6 +99,7 @@ export {
   python,
   springboot,
   dataStructures,
+  prisma,
   sql,
   meraai,
   tcs,

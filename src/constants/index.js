@@ -10,6 +10,7 @@ import {
   redux,
   tailwind,
   nodejs,
+  prisma,
   mongodb,
   git,
   java,
@@ -344,19 +345,19 @@ const testimonials = [
   },
   {
     testimonial:
-      'I had the pleasure of working with Vishnu on a software project and was thoroughly impressed by his skills and professionalism. He is an exceptional developer who consistently delivers high-quality work.',
-    name: 'Anuj Singh',
-    designation: 'Frontend Developer',
-    company: 'Meraai',
-    image: anuj,
-  },
-  {
-    testimonial:
       "It's been three years since I know Vishnu. He is outgoing, smart, funny and a person who knows what is important at the right moment. He is supportive and a non-judgemental person. He is hardworking and likes challenging tasks. He is funny and a team player, knows how to make connections and is trustworthy. He is helpful, social and likes to connect with people and know them. He doesn't mix his personal and private life and knows how to set boundaries. He is a really great friend and a good team member.",
     name: 'Shivangi Shrivastava',
     designation: 'System Engineer',
     company: 'TCS',
     image: shivangi,
+  },
+  {
+    testimonial:
+      'I had the pleasure of working with Vishnu on a software project and was thoroughly impressed by his skills and professionalism. He is an exceptional developer who consistently delivers high-quality work.',
+    name: 'Anuj Singh',
+    designation: 'Frontend Developer',
+    company: 'Meraai',
+    image: anuj,
   },
   {
     testimonial: 'Inquisitive, quick to catch on and forthcoming.',

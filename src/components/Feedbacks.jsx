@@ -5,6 +5,7 @@ import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 import { portfolioSectionContent, testimonials } from '../constants';
 import ShouldMotionDiv from './custom/ShouldMotionDiv';
+import Slider from 'react-slick';
 
 const FeedbackCard = ({
   index,
@@ -16,13 +17,13 @@ const FeedbackCard = ({
 }) => (
   <ShouldMotionDiv
     variants={fadeIn('', 'spring', index * 0.5, 0.75)}
-    className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'>
+    className='bg-black-200 p-10 rounded-3xl xs:w-[500px] w-full'>
     <p className='text-white font-black text-[48px]'>"</p>
 
-    <div className='mt-1 h-[83%] w-full flex flex-col justify-between'>
+    <div className='mt-1 flex flex-col'>
       <p className='text-white tracking-wider text-[16px]'>{testimonial}</p>
 
-      <div className='mt-7 flex justify-between items-center gap-1'>
+      <div className='mt-7 flex gap-1'>
         <div className='flex-1 flex flex-col'>
           <p className='text-white font-medium text-[17px]'>
             <span className='blue-text-gradient'>@</span> {name}
@@ -43,6 +44,20 @@ const FeedbackCard = ({
 );
 
 const Feedbacks = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 2,
+    speed: 500,
+    cssEase: 'linear',
+    swipeToSlide: true,
+    autoplay: true,
+    // arrows: false,
+    autoplaySpeed: 5000,
+    slidesToShow: 2,
+  };
+
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       <div
@@ -56,8 +71,9 @@ const Feedbacks = () => {
           </h2>
         </ShouldMotionDiv>
       </div>
-      <div
-        className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7 justify-center`}>
+      <Slider
+        className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-8 justify-center`}
+        {...settings}>
         {testimonials.map((testimonial, index) => (
           <FeedbackCard
             key={testimonial.name}
@@ -65,7 +81,7 @@ const Feedbacks = () => {
             {...testimonial}
           />
         ))}
-      </div>
+      </Slider>
     </div>
   );
 };

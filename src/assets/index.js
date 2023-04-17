@@ -27,6 +27,7 @@ import python from './tech/python.png';
 import springboot from './tech/springboot.png';
 import sql from './tech/sql.png';
 import dataStructures from './tech/dataStructures.png';
+import prisma from './tech/prisma.png';
 
 import meraai from './company/meraai.png';
 import tcs from './company/tcs.png';
@@ -55,6 +56,8 @@ import weaknesses from './strengths_weaknesses/weaknesses.png';
 
 import anmol from './testimonials/anmol.jpeg';
 import anuj from './testimonials/anuj.jpeg';
+import shivangi from './testimonials/shivangi.jpeg';
+import dheeraj from './testimonials/dheeraj.jpeg';
 
 import Resume from './Resume.pdf';
 
@@ -95,6 +98,7 @@ export {
   python,
   springboot,
   dataStructures,
+  prisma,
   sql,
   meraai,
   tcs,
@@ -118,6 +122,8 @@ export {
   weaknesses,
   anmol,
   anuj,
+  shivangi,
+  dheeraj,
   a,
   b,
   c,

@@ -10,6 +10,7 @@ import {
   redux,
   tailwind,
   nodejs,
+  prisma,
   mongodb,
   git,
   java,
@@ -50,6 +51,8 @@ import {
   g,
   h,
   anuj,
+  shivangi,
+  dheeraj,
 } from '../assets';
 
 export const navLinks = [
@@ -161,19 +164,34 @@ const services = [
 
 const technologies = [
   {
-    progress: 60,
+    progress: 50,
     name: 'React.js',
     icon: reactjs,
   },
   {
-    progress: 60,
+    progress: 50,
     name: 'JavaScript',
     icon: javascript,
   },
   {
-    progress: 40,
+    progress: 35,
     name: 'TypeScript',
     icon: typescript,
+  },
+  {
+    progress: 40,
+    name: 'Next.js',
+    icon: next,
+  },
+  {
+    progress: 30,
+    name: 'Prisma',
+    icon: prisma,
+  },
+  {
+    progress: 90,
+    name: 'HTML',
+    icon: html,
   },
   {
     progress: 30,
@@ -181,14 +199,14 @@ const technologies = [
     icon: redux,
   },
   {
-    progress: 50,
-    name: 'Next.js',
-    icon: next,
+    progress: 60,
+    name: 'Git',
+    icon: git,
   },
   {
-    progress: 90,
-    name: 'HTML',
-    icon: html,
+    progress: 40,
+    name: 'MongoDB',
+    icon: mongodb,
   },
   {
     progress: 30,
@@ -206,19 +224,14 @@ const technologies = [
     icon: dataStructures,
   },
   {
-    progress: 30,
+    progress: 40,
     name: 'Java',
     icon: java,
   },
   {
-    progress: 50,
+    progress: 45,
     name: 'Springboot',
     icon: springboot,
-  },
-  {
-    progress: 60,
-    name: 'Git',
-    icon: git,
   },
   {
     progress: 50,
@@ -227,24 +240,19 @@ const technologies = [
   },
   {
     progress: 40,
-    name: 'MongoDB',
-    icon: mongodb,
-  },
-  {
-    progress: 40,
     name: 'Python',
     icon: python,
   },
   {
-    progress: 40,
+    progress: 30,
     name: 'jQuery',
     icon: jQuery,
   },
-  {
-    progress: 20,
-    name: 'Node.js',
-    icon: nodejs,
-  },
+  // {
+  //   progress: 20,
+  //   name: 'Node.js',
+  //   icon: nodejs,
+  // },
   {
     progress: 5,
     name: 'Docker',
@@ -329,18 +337,33 @@ const testimonials = [
   {
     testimonial:
       "Vishnu is an exceptional Full Stack Developer with a thirst for learning and growth. His enthusiasm for trying out new things and integrating best practices into his code is truly remarkable. He is a valuable team player and his speedy grasp of new concepts and technologies make him an asset to any firm he's a part of.",
-    name: 'Anmol',
+    name: 'Anmol Vijaywargiya',
     designation: 'CTO',
     company: 'Meraai',
     image: anmol,
   },
   {
     testimonial:
+      "It's been three years since I know Vishnu. He is outgoing, smart, funny and a person who knows what is important at the right moment. He is supportive and a non-judgemental person. He is hardworking and likes challenging tasks. He is funny and a team player, knows how to make connections and is trustworthy. He is helpful, social and likes to connect with people and know them. He doesn't mix his personal and private life and knows how to set boundaries. He is a really great friend and a good team member.",
+    name: 'Shivangi Shrivastava',
+    designation: 'System Engineer',
+    company: 'TCS',
+    image: shivangi,
+  },
+  {
+    testimonial:
       'I had the pleasure of working with Vishnu on a software project and was thoroughly impressed by his skills and professionalism. He is an exceptional developer who consistently delivers high-quality work.',
-    name: 'Anuj',
-    designation: 'Frontend Dev',
+    name: 'Anuj Singh',
+    designation: 'Frontend Developer',
     company: 'Meraai',
     image: anuj,
+  },
+  {
+    testimonial: 'Inquisitive, quick to catch on and forthcoming.',
+    name: 'Dheeraj Mishra',
+    designation: 'Software Engineer',
+    company: 'Wissen Technology',
+    image: dheeraj,
   },
 ];
 

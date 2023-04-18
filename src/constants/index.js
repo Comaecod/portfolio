@@ -335,7 +335,7 @@ const education = [
 const testimonials = [
   {
     testimonial:
-      "Vishnu is an exceptional Full Stack Developer with a thirst for learning and growth. His enthusiasm for trying out new things and integrating best practices into his code is truly remarkable. He is a valuable team player and his speedy grasp of new concepts and technologies make him an asset to any firm he's a part of.",
+      "Vishnu is an exceptional Full Stack Developer with a thirst for learning and growth. His enthusiasm for trying out new things and integrating best practices into his code is truly remarkable. He is a valuable team player and his speedy grasp of new concepts and technologies make him an asset to any firm he's part of.",
     name: 'Anmol Vijaywargiya',
     designation: 'CTO',
     company: 'Meraai',
@@ -358,7 +358,8 @@ const testimonials = [
     image: anuj,
   },
   {
-    testimonial: 'Inquisitive, quick to catch on and forthcoming.',
+    testimonial:
+      'Vishnu is extremely inquisitive and quick to catch on to things which I think are a must have qualities in a good resource. He is forthcoming which makes him a good team player as well.',
     name: 'Dheeraj Mishra',
     designation: 'Software Engineer',
     company: 'Wissen Technology',

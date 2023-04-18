@@ -12,7 +12,6 @@ const NAME_REGEX = /^[a-zA-Z ]+$/;
 const EMAIL_REGEX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 const Contact = () => {
-  const formRef = useRef();
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -20,6 +19,7 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -32,6 +32,8 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    alert('Button Was CLicked!');
 
     emailjs
       .send(
@@ -64,6 +66,8 @@ const Contact = () => {
           alert('Ahh, something went wrong. Please try again.');
         }
       );
+
+    setIsDisabled(true);
   };
 
   let submit = <p>{portfolioSectionContent.contact.submitReplaceText}</p>;
@@ -75,8 +79,9 @@ const Contact = () => {
   ) {
     submit = (
       <button
+        disabled={isDisabled}
         type='submit'
-        className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'>
+        className='bg-tertiary disabled:hidden py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'>
         {loading ? 'Sending...' : 'Send'}
       </button>
     );
@@ -96,7 +101,6 @@ const Contact = () => {
         </h3>
 
         <form
-          ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'>
           <label className='flex flex-col'>

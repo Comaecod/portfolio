@@ -59,7 +59,7 @@ const Feedbacks = () => {
 
   return (
     <div
-      className={`mt-12 xs:m-auto bg-black-100 rounded-[20px] xs:w-3/5 w-full`}>
+      className={`mt-12 lg:m-auto bg-black-100 rounded-[20px] lg:w-3/5 w-full`}>
       <div
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}>
         <ShouldMotionDiv variants={textVariant()}>
@@ -72,7 +72,7 @@ const Feedbacks = () => {
         </ShouldMotionDiv>
       </div>
       <Slider
-        className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-8 justify-center`}
+        className={`-mt-20 pb-6 ${styles.paddingX} flex`}
         {...settings}>
         {testimonials.map((testimonial, index) => (
           <FeedbackCard

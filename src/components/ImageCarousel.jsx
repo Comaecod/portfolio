@@ -35,7 +35,7 @@ function ImageCarousel() {
       </ShouldMotionDiv>
       <Slider
         {...settings}
-        className='max-w-[700px] h-4/5 w-full m-auto py-16 px-4 group'>
+        className='max-w-[700px] h-4/5 xs:w-full w-[90%] m-auto py-16 px-4 group'>
         {imagesCarousel.map((img) => (
           <img
             src={img}

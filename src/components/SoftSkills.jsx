@@ -30,12 +30,13 @@ const SoftSkills = () => {
           <p className={styles.sectionSubText + ' text-center'}>
             {portfolioSectionContent.softSkills.subtitle}
           </p>
-          <h2 className={styles.sectionHeadText + ' text-center'}>
+          <h2 className={styles.sectionHeadText + ' text-center md:mb-16'}>
             {portfolioSectionContent.softSkills.title}
           </h2>
         </ShouldMotionDiv>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
+      <div
+        className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7 xs:justify-center`}>
         {strong_points.map((point, index) => (
           <SkillCard
             key={point.title}

@@ -27,6 +27,7 @@ import {
   meetups,
   quotes,
   jogtracker,
+  netflix,
   whatsapp_social,
   linkedin_social,
   github_social,
@@ -368,6 +369,31 @@ const testimonials = [
 ];
 
 const projects = [
+  /* {
+    name: 'Netflix Clone',
+    description: 'This is a clone built using Next.js and NextAuth.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'mongoDB',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'nextauth',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'prisma',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: netflix,
+    live_app_link: 'https://netflix.com/', // <- Change this
+    source_code_link: 'https://github.com/Comaecod/netflix-clone',
+  }, */
   {
     name: 'Quotes',
     description:

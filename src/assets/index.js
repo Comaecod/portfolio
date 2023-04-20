@@ -38,6 +38,7 @@ import jaihind from './education/jaihind.jpg';
 import meetups from './meetups.png';
 import quotes from './quotes.png';
 import jogtracker from './jogtracker.jpg';
+import netflix from './netflix.png';
 
 import whatsapp_social from './social/whatsapp.png';
 import github_social from './social/github.png';
@@ -107,6 +108,7 @@ export {
   meetups,
   quotes,
   jogtracker,
+  netflix,
   whatsapp_social,
   github_social,
   medium_social,

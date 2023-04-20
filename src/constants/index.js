@@ -369,7 +369,7 @@ const testimonials = [
 ];
 
 const projects = [
-  /* {
+  {
     name: 'Netflix Clone',
     description: 'This is a clone built using Next.js and NextAuth.',
     tags: [
@@ -391,9 +391,9 @@ const projects = [
       },
     ],
     image: netflix,
-    live_app_link: 'https://netflix.com/', // <- Change this
+    live_app_link: 'https://netflix-clone-comaecod.vercel.app/',
     source_code_link: 'https://github.com/Comaecod/netflix-clone',
-  }, */
+  },
   {
     name: 'Quotes',
     description:

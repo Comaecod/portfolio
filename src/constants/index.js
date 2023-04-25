@@ -84,7 +84,7 @@ export const navLinks = [
   {
     link: '#contact',
     text: 'Contact',
-    title: 'Phone', //'☎',
+    title: 'Contact', //'☎',
   },
   {
     link: Resume,

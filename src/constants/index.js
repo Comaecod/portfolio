@@ -18,8 +18,8 @@ import {
   python,
   springboot,
   sql,
-  docker,
   dataStructures,
+  aws,
   meraai,
   tcs,
   jaihind,
@@ -248,15 +248,20 @@ const technologies = [
     name: 'jQuery',
     icon: jQuery,
   },
-  // {
-  //   progress: 20,
-  //   name: 'Node.js',
-  //   icon: nodejs,
-  // },
+  /* {
+    progress: 20,
+    name: 'Node.js',
+    icon: nodejs,
+  },
   {
     progress: 5,
     name: 'Docker',
     icon: docker,
+  }, */
+  {
+    progress: 5,
+    name: 'AWS',
+    icon: aws,
   },
 ];
 

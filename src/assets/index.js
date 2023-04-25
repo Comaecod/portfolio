@@ -1,10 +1,10 @@
 import logo from './logo.svg';
-import backend from './backend.png';
-import creator from './creator.png';
-import mobile from './mobile.png';
-import web from './web.png';
-import github from './github.png';
-import link from './link.png';
+import backend from './overview/backend.png';
+import creator from './overview/creator.png';
+import mobile from './overview/mobile.png';
+import web from './overview/web.png';
+import github from './projects/github.png';
+import link from './projects/link.png';
 import menu from './menu.svg';
 import close from './close.svg';
 
@@ -28,6 +28,7 @@ import springboot from './tech/springboot.png';
 import sql from './tech/sql.png';
 import dataStructures from './tech/dataStructures.png';
 import prisma from './tech/prisma.png';
+import aws from './tech/aws.png';
 
 import meraai from './company/meraai.png';
 import tcs from './company/tcs.png';
@@ -35,10 +36,10 @@ import tcs from './company/tcs.png';
 import sastra from './education/sastra.png';
 import jaihind from './education/jaihind.jpg';
 
-import meetups from './meetups.png';
-import quotes from './quotes.png';
-import jogtracker from './jogtracker.jpg';
-import netflix from './netflix.png';
+import meetups from './projects/meetups.png';
+import quotes from './projects/quotes.png';
+import jogtracker from './projects/jogtracker.jpg';
+import netflix from './projects/netflix.png';
 
 import whatsapp_social from './social/whatsapp.png';
 import github_social from './social/github.png';
@@ -101,6 +102,7 @@ export {
   springboot,
   dataStructures,
   sql,
+  aws,
   meraai,
   tcs,
   sastra,

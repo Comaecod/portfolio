@@ -105,8 +105,8 @@ const portfolioSectionContent = {
     subtitle: 'What I have done so far',
   },
   hardSkills: {
-    title: 'Hard Skills 💻',
-    subtitle: 'Technical Stuff',
+    title: 'Technical Skills 💻',
+    subtitle: "Technologies I've worked on so far",
   },
   softSkills: {
     title: 'My Capabilities 🦸‍♂️',
@@ -129,7 +129,7 @@ const portfolioSectionContent = {
     subtitle: 'What Others Say About My Work',
   },
   hobbies: {
-    title: 'Hobbies 🚀',
+    title: 'Hobbies 🚩',
     subtitle: 'Personal Interests',
   },
   gallery: {
@@ -169,6 +169,11 @@ const technologies = [
     icon: reactjs,
   },
   {
+    progress: 40,
+    name: 'Next.js',
+    icon: next,
+  },
+  {
     progress: 50,
     name: 'JavaScript',
     icon: javascript,
@@ -179,14 +184,9 @@ const technologies = [
     icon: typescript,
   },
   {
-    progress: 40,
-    name: 'Next.js',
-    icon: next,
-  },
-  {
     progress: 30,
-    name: 'Prisma',
-    icon: prisma,
+    name: 'Redux',
+    icon: redux,
   },
   {
     progress: 90,
@@ -194,14 +194,14 @@ const technologies = [
     icon: html,
   },
   {
-    progress: 30,
-    name: 'Redux',
-    icon: redux,
-  },
-  {
     progress: 60,
     name: 'Git',
     icon: git,
+  },
+  {
+    progress: 30,
+    name: 'Prisma',
+    icon: prisma,
   },
   {
     progress: 40,
@@ -294,7 +294,7 @@ const experiences = [
     company_name: 'Meraai',
     icon: meraai,
     iconBg: '#fff',
-    date: 'January 2023 - February 2023',
+    date: 'January 2023 - March 2023',
     points: [
       'Worked on developing a PWA using React Vite, Framer, and MUI.',
       'Worked on Spring Boot and gained an understanding of the CI/CD pipeline.',
@@ -347,14 +347,14 @@ const testimonials = [
     company: 'Meraai',
     image: anmol,
   },
-  {
+  /* {
     testimonial:
       "It's been three years since I know Vishnu. He is outgoing, smart, funny and a person who knows what is important at the right moment. He is supportive and a non-judgemental person. He is hardworking and likes challenging tasks. He is funny and a team player, knows how to make connections and is trustworthy. He is helpful, social and likes to connect with people and know them. He doesn't mix his personal and private life and knows how to set boundaries. He is a really great friend and a good team member.",
     name: 'Shivangi Shrivastava',
     designation: 'System Engineer',
     company: 'TCS',
     image: shivangi,
-  },
+  }, */
   {
     testimonial:
       'I had the pleasure of working with Vishnu on a software project and was thoroughly impressed by his skills and professionalism. He is an exceptional developer who consistently delivers high-quality work.',

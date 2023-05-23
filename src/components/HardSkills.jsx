@@ -30,17 +30,17 @@ const SkillCard = ({ name, icon, progress, index }) => {
             <h3 className='text-white text-[15px] font-bold text-center'>
               {name}
             </h3>
-            {!/Mobile/i.test(navigator.userAgent) && (
+            {/* {!/Mobile/i.test(navigator.userAgent) && (
               <h2 className='text-green-600 text-[11px] font-bold text-center'>
                 {progress + '%'}
               </h2>
-            )}
+            )} */}
           </div>
-          <div className='w-full h-4 bg-gray-300 rounded-full mt-4'>
+          {/* <div className='w-full h-4 bg-gray-300 rounded-full mt-4'>
             <div
               className={`h-full bg-violet-800 rounded-l-lg transition-all duration-500`}
               style={{ width: progress + '%' }}></div>
-          </div>
+          </div> */}
         </div>
       </ShouldMotionDiv>
     </ShouldTilt>

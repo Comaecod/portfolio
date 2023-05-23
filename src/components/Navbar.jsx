@@ -46,9 +46,8 @@ const Navbar = () => {
             className='w-9 h-9 object-contain'
           />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Vishnu
-            {/* &nbsp; */}
-            {/* <span className='sm:block hidden'>| Programmer</span> */}
+            Vishnu &nbsp;
+            <span className='sm:block hidden'>| Programmer</span>
           </p>
         </Link>
 

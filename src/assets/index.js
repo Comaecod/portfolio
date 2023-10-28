@@ -32,6 +32,7 @@ import aws from './tech/aws.png';
 
 import meraai from './company/meraai.png';
 import tcs from './company/tcs.png';
+import zenoti from './company/zenoti.png';
 
 import sastra from './education/sastra.png';
 import jaihind from './education/jaihind.jpg';
@@ -105,6 +106,7 @@ export {
   aws,
   meraai,
   tcs,
+  zenoti,
   sastra,
   jaihind,
   meetups,

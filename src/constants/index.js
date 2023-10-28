@@ -53,6 +53,7 @@ import {
   f,
   g,
   h,
+  zenoti,
 } from '../assets';
 
 export const navLinks = [
@@ -290,6 +291,17 @@ const hobbies = [
 
 const experiences = [
   {
+    title: 'Software Engineer',
+    company_name: 'Zenoti',
+    icon: zenoti,
+    iconBg: '#fff',
+    date: 'Currently Working',
+    points: [
+      'Actively involved in developing and maintaining our cloud-based SaaS platform, using a technology stack that includes .NET, Angular, and JavaScript/jQuery, to ensure efficient operations.',
+      'Currently responsible for ongoing development and optimization of our cloud-based SaaS solution, enhancing performance and delivering valuable features for our clients.',
+    ],
+  },
+  {
     title: 'Full Stack Developer',
     company_name: 'Meraai',
     icon: meraai,
@@ -347,14 +359,14 @@ const testimonials = [
     company: 'Meraai',
     image: anmol,
   },
-  /* {
+  {
     testimonial:
       "It's been three years since I know Vishnu. He is outgoing, smart, funny and a person who knows what is important at the right moment. He is supportive and a non-judgemental person. He is hardworking and likes challenging tasks. He is funny and a team player, knows how to make connections and is trustworthy. He is helpful, social and likes to connect with people and know them. He doesn't mix his personal and private life and knows how to set boundaries. He is a really great friend and a good team member.",
     name: 'Shivangi Shrivastava',
     designation: 'System Engineer',
     company: 'TCS',
     image: shivangi,
-  }, */
+  },
   {
     testimonial:
       'I had the pleasure of working with Vishnu on a software project and was thoroughly impressed by his skills and professionalism. He is an exceptional developer who consistently delivers high-quality work.',

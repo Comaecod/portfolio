@@ -41,6 +41,7 @@ import meetups from './projects/meetups.png';
 import quotes from './projects/quotes.png';
 import jogtracker from './projects/jogtracker.jpg';
 import netflix from './projects/netflix.png';
+import twitch from './projects/twitch.jpg';
 
 import whatsapp_social from './social/whatsapp.png';
 import github_social from './social/github.png';
@@ -113,6 +114,7 @@ export {
   quotes,
   jogtracker,
   netflix,
+  twitch,
   whatsapp_social,
   github_social,
   medium_social,

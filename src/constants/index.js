@@ -28,6 +28,7 @@ import {
   quotes,
   jogtracker,
   netflix,
+  twitch,
   whatsapp_social,
   linkedin_social,
   github_social,
@@ -386,6 +387,31 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: 'Twitch Clone',
+    description: 'This is a clone built using Next.js, Clerk and Livekit.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'cockroachdb',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'clerk',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'livekit',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: twitch,
+    live_app_link: 'https://next-twitch-clone-delta.vercel.app/',
+    source_code_link: 'https://github.com/Comaecod/next-twitch-clone',
+  },
   {
     name: 'Netflix Clone',
     description: 'This is a clone built using Next.js and NextAuth.',

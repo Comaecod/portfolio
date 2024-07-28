@@ -17,10 +17,11 @@ function ImageCarousel() {
     speed: 500,
     fade: true,
     cssEase: 'linear',
-    swipeToSlide: true,
+    swipeToSlide: false,
     autoplay: true,
-    arrows: true,
-    autoplaySpeed: 1500,
+    arrows: false,
+    pauseOnHover: false,
+    autoplaySpeed: 1000,
   };
 
   return (
@@ -35,13 +36,13 @@ function ImageCarousel() {
       </ShouldMotionDiv>
       <Slider
         {...settings}
-        className='max-w-[700px] h-4/5 xs:w-full w-[90%] m-auto py-16 px-4 group'>
+        className='max-w-[500px] xs:w-full m-auto py-16 px-4 group'>
         {imagesCarousel.map((img) => (
           <img
             src={img}
             alt={img}
             key={img}
-            className='rounded-2xl'
+            className='rounded-full'
           />
         ))}
       </Slider>

@@ -18,7 +18,6 @@ import Footer from './Footer';
 import HardSkills from './HardSkills';
 import SoftSkills from './SoftSkills';
 import Hobbies from './Hobbies';
-import StrengthsAndWeaknesses from './StrengthsAndWeaknesses';
 import ImageCarousel from './ImageCarousel';
 
 export {
@@ -34,7 +33,6 @@ export {
   Footer,
   HardSkills,
   SoftSkills,
-  StrengthsAndWeaknesses,
   Hobbies,
   ImageCarousel,
   CanvasLoader,

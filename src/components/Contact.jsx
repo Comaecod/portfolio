@@ -7,6 +7,7 @@ import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import ShouldMotionDiv from './custom/ShouldMotionDiv';
 import { portfolioSectionContent } from '../constants';
+import { groot } from '../assets';
 
 const NAME_REGEX = /^[a-zA-Z ]+$/;
 const EMAIL_REGEX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -20,6 +21,7 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
+  const [formVisibility, setFormVisibility] = useState(true);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -49,8 +51,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert('Thank you. I will get back to you as soon as possible.');
-
+          setFormVisibility(false);
           setForm({
             name: '',
             email: '',
@@ -60,7 +61,6 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
           alert('Ahh, something went wrong. Please try again.');
         }
       );
@@ -88,67 +88,83 @@ const Contact = () => {
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
-      <ShouldMotionDiv
-        variants={slideIn('left', 'tween', 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
-        <p className={styles.sectionSubText}>
-          {portfolioSectionContent.contact.subtitle}
-        </p>
-        <h3 className={styles.sectionHeadText}>
-          {portfolioSectionContent.contact.title}
-        </h3>
-
-        <form
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
-            <input
-              type='text'
-              name='name'
-              value={form.name}
-              onChange={handleChange}
-              placeholder="The name's Bond."
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
-            <input
-              type='email'
-              name='email'
-              value={form.email}
-              onChange={handleChange}
-              placeholder={
-                /Mobile/i.test(navigator.userAgent)
-                  ? 'The @ thingy'
-                  : "I won't share your email with any aliens."
-              }
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
-            <textarea
-              rows={7}
-              name='message'
-              value={form.message}
-              onChange={handleChange}
-              placeholder="Let's connect and build awesome-ness!"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium resize-none'
-            />
-          </label>
-          {submit}
-        </form>
-      </ShouldMotionDiv>
-
-      {!/Mobile/i.test(navigator.userAgent) && (
+      {formVisibility && (
         <ShouldMotionDiv
-          variants={slideIn('right', 'tween', 0.2, 1)}
-          className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
-          <EarthCanvas />
+          variants={slideIn('left', 'tween', 0.2, 1)}
+          className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
+          <p className={styles.sectionSubText}>
+            {portfolioSectionContent.contact.subtitle}
+          </p>
+          <h3 className={styles.sectionHeadText}>
+            {portfolioSectionContent.contact.title}
+          </h3>
+
+          <form
+            onSubmit={handleSubmit}
+            className='mt-12 flex flex-col gap-8'>
+            <label className='flex flex-col'>
+              <span className='text-white font-medium mb-4'>Your Name</span>
+              <input
+                type='text'
+                name='name'
+                value={form.name}
+                onChange={handleChange}
+                placeholder="The name's Bond."
+                className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              />
+            </label>
+            <label className='flex flex-col'>
+              <span className='text-white font-medium mb-4'>Your email</span>
+              <input
+                type='email'
+                name='email'
+                value={form.email}
+                onChange={handleChange}
+                placeholder={
+                  /Mobile/i.test(navigator.userAgent)
+                    ? 'The @ thingy'
+                    : "I won't share your email with any aliens."
+                }
+                className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              />
+            </label>
+            <label className='flex flex-col'>
+              <span className='text-white font-medium mb-4'>Your Message</span>
+              <textarea
+                rows={7}
+                name='message'
+                value={form.message}
+                onChange={handleChange}
+                placeholder="Let's connect and build awesome-ness!"
+                className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium resize-none'
+              />
+            </label>
+            {submit}
+          </form>
         </ShouldMotionDiv>
       )}
+
+      {!formVisibility && (
+        <div
+          variants={slideIn('left', 'tween', 0.2, 1)}
+          className='flex-1 bg-black-100 p-8 rounded-2xl flex flex-col items-center'>
+          <h3
+            className={
+              'sm:text-[25px] text-[14px] text-secondary tracking-wider mb-4'
+            }>
+            Got it! I'll loop back with you shortly. Let's touch base soon. 👩🏻‍🚀🚀
+          </h3>
+          <img
+            src={groot}
+            alt='groot saying bye'
+          />
+        </div>
+      )}
+      <ShouldMotionDiv
+        variants={slideIn('right', 'tween', 0.2, 1)}
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] sm:block hidden'>
+        <EarthCanvas />
+      </ShouldMotionDiv>
     </div>
   );
 };

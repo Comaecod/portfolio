@@ -9,26 +9,19 @@ import menu from './menu.svg';
 import close from './close.svg';
 
 import css from './tech/css.png';
-import docker from './tech/docker.png';
-import figma from './tech/figma.png';
-import git from './tech/git.png';
-import html from './tech/html.png';
 import javascript from './tech/javascript.png';
-import mongodb from './tech/mongodb.png';
-import nodejs from './tech/nodejs.png';
 import reactjs from './tech/reactjs.png';
+import angular from './tech/angular.png';
+import netmvc from './tech/netmvc.png';
+import ngrx from './tech/ngrx.png';
+import sqlserver from './tech/sqlserver.png';
 import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import next from './tech/next.png';
-import java from './tech/java.png';
 import jQuery from './tech/jQuery.png';
-import python from './tech/python.png';
 import springboot from './tech/springboot.png';
-import sql from './tech/sql.png';
-import dataStructures from './tech/dataStructures.png';
 import prisma from './tech/prisma.png';
-import aws from './tech/aws.png';
 
 import meraai from './company/meraai.png';
 import tcs from './company/tcs.png';
@@ -51,12 +44,13 @@ import linkedin_social from './social/linkedin.png';
 
 import cosmology from './hobbies/cosmology.png';
 import guitar from './hobbies/guitar.png';
+import piano from './hobbies/piano.png';
+import literature from './hobbies/literature.png';
+import pcgaming from './hobbies/pcgaming.png';
 import chess from './hobbies/chess.png';
 import sleuth from './hobbies/sleuth.png';
-import carnaticClassical from './hobbies/carnaticClassical.webp';
-
-import strengths from './strengths_weaknesses/strengths.png';
-import weaknesses from './strengths_weaknesses/weaknesses.png';
+import marvel from './hobbies/marvel.png';
+import carnaticClassical from './hobbies/carnaticClassical.png';
 
 import anmol from './testimonials/anmol.jpeg';
 import anuj from './testimonials/anuj.jpeg';
@@ -65,14 +59,25 @@ import dheeraj from './testimonials/dheeraj.jpeg';
 
 import Resume from './Resume.pdf';
 
-import a from './carousel/1.jpg';
-import b from './carousel/2.jpg';
-import c from './carousel/3.jpg';
-import d from './carousel/4.jpg';
-import e from './carousel/5.jpg';
-import f from './carousel/6.jpg';
-import g from './carousel/7.jpg';
-import h from './carousel/8.jpg';
+import a from './carousel/a.jpg';
+import b from './carousel/b.jpg';
+import c from './carousel/c.jpg';
+import d from './carousel/d.jpg';
+import e from './carousel/e.jpg';
+import f from './carousel/f.jpg';
+import g from './carousel/g.jpg';
+import h from './carousel/h.jpg';
+import i from './carousel/i.jpg';
+import j from './carousel/j.jpg';
+import k from './carousel/k.jpg';
+import l from './carousel/l.jpg';
+import m from './carousel/m.jpg';
+import n from './carousel/n.jpg';
+import o from './carousel/o.jpg';
+import p from './carousel/p.jpg';
+import q from './carousel/q.jpg';
+
+import groot from './contact/groot.gif';
 
 export {
   logo,
@@ -85,26 +90,19 @@ export {
   menu,
   close,
   css,
-  docker,
-  figma,
-  git,
-  html,
   javascript,
-  mongodb,
-  nodejs,
   reactjs,
+  angular,
+  springboot,
+  netmvc,
+  ngrx,
+  sqlserver,
   redux,
   prisma,
   tailwind,
   typescript,
-  java,
   jQuery,
   next,
-  python,
-  springboot,
-  dataStructures,
-  sql,
-  aws,
   meraai,
   tcs,
   zenoti,
@@ -123,11 +121,13 @@ export {
   cosmology,
   chess,
   guitar,
+  piano,
+  literature,
+  pcgaming,
   sleuth,
+  marvel,
   carnaticClassical,
   Resume,
-  strengths,
-  weaknesses,
   anmol,
   anuj,
   shivangi,
@@ -140,4 +140,14 @@ export {
   f,
   g,
   h,
+  i,
+  j,
+  k,
+  l,
+  m,
+  n,
+  o,
+  p,
+  q,
+  groot,
 };

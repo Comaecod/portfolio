@@ -35,13 +35,12 @@ const App = () => {
         <Feedbacks />
         <Education />
         <SoftSkills />
-        {/* <StrengthsAndWeaknesses /> */}
         <Hobbies />
         <ImageCarousel />
         <div className='relative z-0'>
           <Contact />
-          {!/Mobile/i.test(navigator.userAgent) && <StarsCanvas />}
-          {!/Mobile/i.test(navigator.userAgent) && <Tech />}
+          <StarsCanvas />
+          <Tech />
           <Footer />
         </div>
       </div>

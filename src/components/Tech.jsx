@@ -6,10 +6,10 @@ import { technologies } from '../constants';
 
 const Tech = () => {
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-10'>
+    <div className='flex-wrap justify-center gap-10 sm:flex sm:flex-row hidden'>
       {technologies.slice(0, 6).map((technology) => (
         <div
-          className='w-36 h-36'
+          className='w-20 h-20'
           key={technology.name}>
           <BallCanvas icon={technology.icon} />
         </div>

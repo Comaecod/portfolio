@@ -4,22 +4,18 @@ import {
   web,
   javascript,
   typescript,
-  html,
   css,
   reactjs,
+  angular,
+  ngrx,
+  sqlserver,
+  netmvc,
   redux,
   tailwind,
   prisma,
-  mongodb,
-  git,
-  java,
   jQuery,
   next,
-  python,
   springboot,
-  sql,
-  dataStructures,
-  aws,
   meraai,
   tcs,
   jaihind,
@@ -37,11 +33,13 @@ import {
   Resume,
   cosmology,
   guitar,
+  piano,
+  literature,
+  pcgaming,
   chess,
   carnaticClassical,
   sleuth,
-  strengths,
-  weaknesses,
+  marvel,
   anmol,
   anuj,
   shivangi,
@@ -54,25 +52,24 @@ import {
   f,
   g,
   h,
+  i,
+  j,
+  k,
+  l,
+  m,
+  n,
+  o,
+  p,
+  q,
   zenoti,
 } from '../assets';
 
 export const navLinks = [
-  // {
-  //   link: '#about',
-  //   text: 'About',
-  //   title: 'About',
-  // },
   {
     link: '#work',
     text: 'Experience',
     title: 'Work',
   },
-  // {
-  //   link: '#education',
-  //   text: 'Education',
-  //   title: 'Education',
-  // },
   {
     link: '#hardSkills',
     text: 'Skills',
@@ -86,12 +83,12 @@ export const navLinks = [
   {
     link: '#contact',
     text: 'Contact',
-    title: 'Contact', //'☎',
+    title: 'Contact',
   },
   {
     link: Resume,
     text: 'Download CV',
-    title: 'CV', //'⬇',
+    title: 'CV',
   },
 ];
 
@@ -100,14 +97,14 @@ const portfolioSectionContent = {
     title: 'Overview 👨‍💻',
     subtitle: 'Introduction',
     content:
-      'My name is Vishnu, and I am a 24-year-old experienced Fullstack Developer with a strong focus on React and Next. I have a keen desire to learn modern technologies and am committed to delivering high-quality work. I enjoy collaborating with crossfunctional teams to achieve project goals and am passionate about frontend development. I am eager to explore opportunities in React, Next, and other modern front-end technologies. If you are looking for a collaborative and growth-oriented frontend developer, I would be happy to contribute my expertise to your team.',
+      'My name is Vishnu, and I am a 26-year-old experienced Fullstack Developer with a focus on React, Next & Angular. I have a keen desire to learn modern technologies and am committed to delivering high-quality work. I enjoy collaborating with crossfunctional teams to achieve project goals and am passionate about frontend development. I am eager to explore opportunities in modern front-end technologies. If you are looking for a collaborative and growth-oriented frontend developer, I would be happy to contribute my expertise to your team.',
   },
   experience: {
     title: 'Work Experience 💪',
     subtitle: 'What I have done so far',
   },
   hardSkills: {
-    title: 'Technical Skills 💻',
+    title: 'Technological Experience 💻',
     subtitle: "Technologies I've worked on so far",
   },
   softSkills: {
@@ -145,148 +142,26 @@ const portfolioSectionContent = {
       'Pass your name, email, and message as props so I can render your Send button. 😉',
   },
   footer: {
-    content: 'Made using React, Three.js, Tailwind and Framer.',
+    content: 'This website is made using React, Three, Tailwind and Framer.',
   },
 };
 
 const services = [
   {
-    title: 'React Developer',
+    title: 'React',
     icon: web,
   },
   {
-    title: 'Springboot Developer',
+    title: 'Next',
     icon: mobile,
   },
   {
-    title: 'Fullstack Developer',
+    title: 'Angular',
     icon: backend,
   },
-];
-
-const technologies = [
   {
-    progress: 50,
-    name: 'React.js',
-    icon: reactjs,
-  },
-  {
-    progress: 40,
-    name: 'Next.js',
-    icon: next,
-  },
-  {
-    progress: 50,
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
-    progress: 35,
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
-    progress: 30,
-    name: 'Redux',
-    icon: redux,
-  },
-  {
-    progress: 90,
-    name: 'HTML',
-    icon: html,
-  },
-  {
-    progress: 60,
-    name: 'Git',
-    icon: git,
-  },
-  {
-    progress: 30,
-    name: 'Prisma',
-    icon: prisma,
-  },
-  {
-    progress: 40,
-    name: 'MongoDB',
-    icon: mongodb,
-  },
-  {
-    progress: 30,
-    name: 'CSS',
-    icon: css,
-  },
-  {
-    progress: 30,
-    name: 'Tailwind',
-    icon: tailwind,
-  },
-  /* {
-    progress: 30,
-    name: 'Algorithms',
-    icon: dataStructures,
-  }, */
-  {
-    progress: 40,
-    name: 'Java',
-    icon: java,
-  },
-  {
-    progress: 45,
-    name: 'Springboot',
-    icon: springboot,
-  },
-  {
-    progress: 50,
-    name: 'SQL',
-    icon: sql,
-  },
-  {
-    progress: 40,
-    name: 'Python',
-    icon: python,
-  },
-  {
-    progress: 30,
-    name: 'jQuery',
-    icon: jQuery,
-  },
-  /* {
-    progress: 20,
-    name: 'Node.js',
-    icon: nodejs,
-  },
-  {
-    progress: 5,
-    name: 'Docker',
-    icon: docker,
-  }, */
-  {
-    progress: 5,
-    name: 'AWS',
-    icon: aws,
-  },
-];
-
-const hobbies = [
-  {
-    name: 'Cosmology',
-    icon: cosmology,
-  },
-  {
-    name: 'Carnatic Classical',
-    icon: carnaticClassical,
-  },
-  {
-    name: 'Guitar',
-    icon: guitar,
-  },
-  {
-    name: 'Chess',
-    icon: chess,
-  },
-  {
-    name: 'Sleuth Movies',
-    icon: sleuth,
+    title: '.NET',
+    icon: mobile,
   },
 ];
 
@@ -298,7 +173,7 @@ const experiences = [
     iconBg: '#fff',
     date: 'Currently Working',
     points: [
-      'Actively involved in developing and maintaining our cloud-based SaaS platform, using a technology stack that includes .NET, Angular, and JavaScript/jQuery, to ensure efficient operations.',
+      'Actively involved in developing and maintaining our cloud-based SaaS platform, using a technology stack that includes Angular, .NET, and JavaScript/jQuery, to ensure efficient operations.',
       'Currently responsible for ongoing development and optimization of our cloud-based SaaS solution, enhancing performance and delivering valuable features for our clients.',
     ],
   },
@@ -330,59 +205,76 @@ const experiences = [
   },
 ];
 
-const education = [
+const technologies = [
   {
-    title: 'Master of Computer Applications',
-    institution_name: 'Sastra University',
-    icon: sastra,
-    iconBg: '#fff',
-    date: 'Ongoing',
-    description:
-      'This program provides the flexibility to balance academics and work, deepen computer knowledge, refine analytical skills, and explore new interests. Eager to continue learning and expanding skill set.',
+    progress: 50,
+    name: 'Angular',
+    icon: angular,
   },
   {
-    title: 'Bachelor Of Vocation In Software Development(9.64 CGPA)',
-    institution_name: 'Jai Hind College',
-    icon: jaihind,
-    iconBg: '#fff',
-    date: 'July 2016 - March 2019',
-    description:
-      'In college, I participated in tech and environment initiatives, organizing events and honing my leadership skills. I also achieved academic excellence with top scholarships all three years. These experiences allowed for personal and professional growth.',
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "Vishnu is an exceptional Full Stack Developer with a thirst for learning and growth. His enthusiasm for trying out new things and integrating best practices into his code is truly remarkable. He is a valuable team player and his speedy grasp of new concepts and technologies make him an asset to any firm he's part of.",
-    name: 'Anmol Vijaywargiya',
-    designation: 'CTO',
-    company: 'Meraai',
-    image: anmol,
+    progress: 30,
+    name: 'NGRX',
+    icon: ngrx,
   },
   {
-    testimonial:
-      "It's been three years since I know Vishnu. He is outgoing, smart, funny and a person who knows what is important at the right moment. He is supportive and a non-judgemental person. He is hardworking and likes challenging tasks. He is funny and a team player, knows how to make connections and is trustworthy. He is helpful, social and likes to connect with people and know them. He doesn't mix his personal and private life and knows how to set boundaries. He is a really great friend and a good team member.",
-    name: 'Shivangi Shrivastava',
-    designation: 'System Engineer',
-    company: 'TCS',
-    image: shivangi,
+    progress: 35,
+    name: 'TypeScript',
+    icon: typescript,
   },
   {
-    testimonial:
-      'I had the pleasure of working with Vishnu on a software project and was thoroughly impressed by his skills and professionalism. He is an exceptional developer who consistently delivers high-quality work.',
-    name: 'Anuj Singh',
-    designation: 'Frontend Developer',
-    company: 'Meraai',
-    image: anuj,
+    progress: 40,
+    name: 'Next.js',
+    icon: next,
   },
   {
-    testimonial:
-      'Vishnu is extremely inquisitive and quick to catch on to things which I think are a must have qualities in a good resource. He is forthcoming which makes him a good team player as well.',
-    name: 'Dheeraj Mishra',
-    designation: 'Software Engineer',
-    company: 'Wissen Technology',
-    image: dheeraj,
+    progress: 50,
+    name: 'React.js',
+    icon: reactjs,
+  },
+  {
+    progress: 30,
+    name: 'Redux',
+    icon: redux,
+  },
+  {
+    progress: 50,
+    name: 'JavaScript',
+    icon: javascript,
+  },
+  {
+    progress: 30,
+    name: 'jQuery',
+    icon: jQuery,
+  },
+  {
+    progress: 30,
+    name: 'Tailwind',
+    icon: tailwind,
+  },
+  {
+    progress: 30,
+    name: 'CSS',
+    icon: css,
+  },
+  {
+    progress: 50,
+    name: '.NET MVC',
+    icon: netmvc,
+  },
+  {
+    progress: 50,
+    name: 'SQL Server',
+    icon: sqlserver,
+  },
+  {
+    progress: 30,
+    name: 'Prisma',
+    icon: prisma,
+  },
+  {
+    progress: 45,
+    name: 'Springboot',
+    icon: springboot,
   },
 ];
 
@@ -503,6 +395,136 @@ const projects = [
   },
 ];
 
+const testimonials = [
+  {
+    testimonial:
+      "Vishnu is an exceptional Full Stack Developer with a thirst for learning and growth. His enthusiasm for trying out new things and integrating best practices into his code is truly remarkable. He is a valuable team player and his speedy grasp of new concepts and technologies make him an asset to any firm he's part of.",
+    name: 'Anmol Vijaywargiya',
+    designation: 'CTO',
+    company: 'Meraai',
+    image: anmol,
+  },
+  {
+    testimonial:
+      "It's been three years since I know Vishnu. He is outgoing, smart, funny and a person who knows what is important at the right moment. He is supportive and a non-judgemental person. He is hardworking and likes challenging tasks. He is funny and a team player, knows how to make connections and is trustworthy. He is helpful, social and likes to connect with people and know them. He doesn't mix his personal and private life and knows how to set boundaries. He is a really great friend and a good team member.",
+    name: 'Shivangi Shrivastava',
+    designation: 'System Engineer',
+    company: 'TCS',
+    image: shivangi,
+  },
+  {
+    testimonial:
+      'I had the pleasure of working with Vishnu on a software project and was thoroughly impressed by his skills and professionalism. He is an exceptional developer who consistently delivers high-quality work.',
+    name: 'Anuj Singh',
+    designation: 'Frontend Developer',
+    company: 'Meraai',
+    image: anuj,
+  },
+  {
+    testimonial:
+      'Vishnu is extremely inquisitive and quick to catch on to things which I think are a must have qualities in a good resource. He is forthcoming which makes him a good team player as well.',
+    name: 'Dheeraj Mishra',
+    designation: 'Software Engineer',
+    company: 'Wissen Technology',
+    image: dheeraj,
+  },
+];
+
+const education = [
+  {
+    title: 'Master of Computer Applications(8.88 CGPA)',
+    institution_name: 'Sastra University',
+    icon: sastra,
+    iconBg: '#fff',
+    date: 'February 2022 - February 2024',
+    description:
+      'This program provided the flexibility to balance academics and work, deepened computer knowledge, refined analytical skills, and allowed the exploration of new interests, ready to apply my advanced knowledge and skills to new challenges and opportunities.',
+  },
+  {
+    title: 'Bachelor Of Vocation In Software Development(9.64 CGPA)',
+    institution_name: 'Jai Hind College',
+    icon: jaihind,
+    iconBg: '#fff',
+    date: 'July 2016 - March 2019',
+    description:
+      'In college, I participated in tech and environment initiatives, organizing events and honing my leadership skills. I also achieved academic excellence with top scholarships all three years. These experiences allowed for personal and professional growth.',
+  },
+];
+
+const strong_points = [
+  {
+    title: 'DEVOTION',
+    content:
+      'My top priority is God, Guru and my parents. I approach tasks with passion and dedication, consistently delivering exceptional results.',
+  },
+  {
+    title: 'SOUL SEARCHING',
+    content:
+      'I am willing to introspect and reflect on my experiences, which helps me to continuously learn and grow as a person.',
+  },
+  {
+    title: 'CONFIDENTIALITY',
+    content:
+      'I am committed to being trustworthy, balancing confidentiality and openness to build strong relationships with others.',
+  },
+  {
+    title: 'AFFABILITY',
+    content:
+      'I am friendly and approachable, which allows me to build positive relationships with others.',
+  },
+  {
+    title: 'COMMUNICATION',
+    content:
+      'I have the ability to convey ideas and information effectively, which allows me to achieve shared goals.',
+  },
+  {
+    title: 'LEADERSHIP',
+    content:
+      'I inspire and motivate others with clear direction and guidance, leading teams towards achieving ambitious goals.',
+  },
+];
+
+const hobbies = [
+  {
+    name: 'Playing Guitar',
+    icon: guitar,
+  },
+  {
+    name: 'Playing Piano',
+    icon: piano,
+  },
+  {
+    name: 'Reading English Literature',
+    icon: literature,
+  },
+  {
+    name: 'PC Gaming',
+    icon: pcgaming,
+  },
+  {
+    name: 'Cosmology',
+    icon: cosmology,
+  },
+  {
+    name: 'Carnatic Classical',
+    icon: carnaticClassical,
+  },
+  {
+    name: 'Sleuth Movies',
+    icon: sleuth,
+  },
+  {
+    name: 'Marvel Movies',
+    icon: marvel,
+  },
+  {
+    name: 'Chess',
+    icon: chess,
+  },
+];
+
+const imagesCarousel = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q];
+
 const social_media = [
   {
     link: 'https://www.linkedin.com/in/vishnu-parasuramuni-b19427190',
@@ -531,68 +553,6 @@ const social_media = [
   },
 ];
 
-const strong_points = [
-  {
-    title: 'DEVOTION',
-    content:
-      'My top priority is God, Guru and my parents. I approach tasks with passion and dedication, consistently delivering exceptional results.',
-  },
-  {
-    title: 'SOUL SEARCHING',
-    content:
-      'I am willing to introspect and reflect on my experiences, which helps me to continuously learn and grow as a person.',
-  },
-  {
-    title: 'TRANSPARENCY',
-    content:
-      'I am committed to being honest and open, which allows me to build trust and establish strong relationships with others.',
-  },
-  {
-    title: 'AFFABILITY',
-    content:
-      'I am friendly and approachable, which allows me to build positive relationships with others.',
-  },
-  {
-    title: 'COMMUNICATION',
-    content:
-      'I have the ability to convey ideas and information effectively, which allows me to achieve shared goals.',
-  },
-  {
-    title: 'LEADERSHIP',
-    content:
-      'I inspire and motivate others with clear direction and guidance, leading teams towards achieving ambitious goals.',
-  },
-];
-
-const imagesCarousel = [a, b, c, d, e, f, g, h];
-
-const strengths_and_weaknesses = [
-  {
-    title: 'Assets',
-    subtitle: 'Not to brag, but these are my superhero powers!',
-    icon: strengths,
-    iconBg: '#fff',
-    type: 'Strengths',
-    points: [
-      'DEVOTION: A Pillar of Strength in Upholding Tradition',
-      'TRANSPARENCY: Being to the point, clear expressions, transparent, unequivocal.',
-      'SOUL SEARCHING: Embracing Flaws and Striving for Perfection',
-    ],
-  },
-  {
-    title: 'Limitations',
-    subtitle: "My Kryptonite List: Things I'm Working On!",
-    icon: weaknesses,
-    iconBg: '#fff',
-    type: 'Weaknesses',
-    points: [
-      'PEEVISH: I get peevish responding to people who are domineering or boorish.',
-      'GULLIBLE: At times I could be naive and gullible.',
-      "LENIENT: I consider myself 'too kind'. Many a time I am unable to say NO even when required.",
-    ],
-  },
-];
-
 export {
   portfolioSectionContent,
   services,
@@ -603,7 +563,6 @@ export {
   projects,
   hobbies,
   social_media,
-  strengths_and_weaknesses,
   strong_points,
   imagesCarousel,
 };

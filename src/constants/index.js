@@ -490,7 +490,7 @@ const hobbies = [
     icon: guitar,
   },
   {
-    name: 'Playing Piano',
+    name: 'Playing Casio',
     icon: piano,
   },
   {
@@ -502,23 +502,23 @@ const hobbies = [
     icon: pcgaming,
   },
   {
-    name: 'Cosmology',
+    name: 'Reading about the Cosmos',
     icon: cosmology,
   },
   {
-    name: 'Carnatic Classical',
+    name: 'Carnatic Classical Singing',
     icon: carnaticClassical,
   },
   {
-    name: 'Sleuth Movies',
+    name: ' Watching Sleuth Movies',
     icon: sleuth,
   },
   {
-    name: 'Marvel Movies',
+    name: 'Following Marvel Movies',
     icon: marvel,
   },
   {
-    name: 'Chess',
+    name: 'Playing Chess, Carrom, and TT',
     icon: chess,
   },
 ];

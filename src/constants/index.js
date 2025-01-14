@@ -159,10 +159,6 @@ const services = [
     title: 'Angular',
     icon: backend,
   },
-  {
-    title: '.NET',
-    icon: mobile,
-  },
 ];
 
 const experiences = [
@@ -208,18 +204,13 @@ const experiences = [
 const technologies = [
   {
     progress: 50,
+    name: 'JavaScript',
+    icon: javascript,
+  },
+  {
+    progress: 50,
     name: 'Angular',
     icon: angular,
-  },
-  {
-    progress: 30,
-    name: 'NGRX',
-    icon: ngrx,
-  },
-  {
-    progress: 35,
-    name: 'TypeScript',
-    icon: typescript,
   },
   {
     progress: 40,
@@ -232,14 +223,9 @@ const technologies = [
     icon: reactjs,
   },
   {
-    progress: 30,
-    name: 'Redux',
-    icon: redux,
-  },
-  {
-    progress: 50,
-    name: 'JavaScript',
-    icon: javascript,
+    progress: 35,
+    name: 'TypeScript',
+    icon: typescript,
   },
   {
     progress: 30,
@@ -250,6 +236,16 @@ const technologies = [
     progress: 30,
     name: 'Tailwind',
     icon: tailwind,
+  },
+  {
+    progress: 30,
+    name: 'NGRX',
+    icon: ngrx,
+  },
+  {
+    progress: 30,
+    name: 'Redux',
+    icon: redux,
   },
   {
     progress: 30,
@@ -282,24 +278,7 @@ const projects = [
   {
     name: 'Twitch Clone',
     description: 'This is a clone built using Next.js, Clerk and Livekit.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'cockroachdb',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'clerk',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'livekit',
-        color: 'blue-text-gradient',
-      },
-    ],
+    tags: ['nextjs', 'cockroachdb', 'clerk', 'livekit'],
     image: twitch,
     live_app_link: 'https://next-twitch-clone-delta.vercel.app/',
     source_code_link: 'https://github.com/Comaecod/next-twitch-clone',
@@ -307,24 +286,7 @@ const projects = [
   {
     name: 'Netflix Clone',
     description: 'This is a clone built using Next.js and NextAuth.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'mongoDB',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'nextauth',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'prisma',
-        color: 'blue-text-gradient',
-      },
-    ],
+    tags: ['nextjs', 'mongoDB', 'nextauth', 'prisma'],
     image: netflix,
     live_app_link: 'https://netflix-clone-comaecod.vercel.app/',
     source_code_link: 'https://github.com/Comaecod/netflix-clone',
@@ -333,20 +295,7 @@ const projects = [
     name: 'Quotes',
     description:
       'This is an SPA that allows users to add quotes and also comment on every quote.',
-    tags: [
-      {
-        name: 'reactjs',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'firebase',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'realtimeDB',
-        color: 'green-text-gradient',
-      },
-    ],
+    tags: ['reactjs', 'firebase', 'realtimeDB'],
     image: quotes,
     live_app_link: 'https://react-http-6e37a.web.app/',
   },
@@ -354,20 +303,7 @@ const projects = [
     name: 'Meetups',
     description:
       'This is an SPA that allows users to create and list all upcoming meetups.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'vercel',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'mongoDB',
-        color: 'pink-text-gradient',
-      },
-    ],
+    tags: ['nextjs', 'vercel', 'mongoDB'],
     image: meetups,
     source_code_link: 'https://github.com/Comaecod/nextjs-meetups',
     live_app_link: 'https://nextjs-meetups-gules.vercel.app/',
@@ -376,20 +312,7 @@ const projects = [
     name: 'JogTracker',
     description:
       'A backend app for jogging data, with roles, storing data, and managing users.',
-    tags: [
-      {
-        name: 'springboot',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'swagger',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'MySQL',
-        color: 'blue-text-gradient',
-      },
-    ],
+    tags: ['springboot', 'swagger', 'MySQL'],
     image: jogtracker,
     source_code_link: 'https://github.com/Comaecod/JogTracker-REST.git',
   },

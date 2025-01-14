@@ -4,7 +4,7 @@ import { styles } from '../styles';
 import { link, github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { portfolioSectionContent, projects } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
+import { fadeIn, getRandomTailwindColors, textVariant } from '../utils/motion';
 import ShouldMotionP from './custom/ShouldMotionP';
 import ShouldMotionDiv from './custom/ShouldMotionDiv';
 import ShouldTilt from './custom/ShouldTilt';
@@ -68,9 +68,9 @@ const ProjectCard = ({
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
             <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}>
-              #{tag.name}
+              key={`${name}-${tag}`}
+              className={`text-[12px] rounded-[8px] px-[4px] py-[2px] ${getRandomTailwindColors()}`}>
+              #{tag}
             </p>
           ))}
         </div>

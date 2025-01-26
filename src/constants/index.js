@@ -61,6 +61,12 @@ import {
   o,
   p,
   q,
+  r,
+  s,
+  t,
+  u,
+  v,
+  w,
   zenoti,
 } from '../assets';
 
@@ -446,7 +452,31 @@ const hobbies = [
   },
 ];
 
-const imagesCarousel = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q];
+const imagesCarousel = [
+  a,
+  b,
+  c,
+  d,
+  e,
+  f,
+  g,
+  h,
+  i,
+  j,
+  k,
+  l,
+  m,
+  n,
+  o,
+  p,
+  q,
+  r,
+  s,
+  t,
+  u,
+  v,
+  w,
+];
 
 const social_media = [
   {

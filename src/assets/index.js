@@ -76,6 +76,12 @@ import n from './carousel/n.jpg';
 import o from './carousel/o.jpg';
 import p from './carousel/p.jpg';
 import q from './carousel/q.jpg';
+import r from './carousel/r.jpg';
+import s from './carousel/s.jpg';
+import t from './carousel/t.jpg';
+import u from './carousel/u.jpg';
+import v from './carousel/v.jpg';
+import w from './carousel/w.jpg';
 
 import groot from './contact/groot.gif';
 
@@ -149,5 +155,11 @@ export {
   o,
   p,
   q,
+  r,
+  s,
+  t,
+  u,
+  v,
+  w,
   groot,
 };

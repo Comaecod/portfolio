@@ -173,10 +173,13 @@ const experiences = [
     company_name: 'Zenoti',
     icon: zenoti,
     iconBg: '#fff',
-    date: 'Currently Working',
+    date: 'August 2023 - February 2025',
     points: [
-      'Actively involved in developing and maintaining our cloud-based SaaS platform, using a technology stack that includes Angular, .NET, and JavaScript/jQuery, to ensure efficient operations.',
-      'Currently responsible for ongoing development and optimization of our cloud-based SaaS solution, enhancing performance and delivering valuable features for our clients.',
+      'Boosted page load times by 70%, achieving a Google Lighthouse score of 95+ through optimized DOM rendering and deferred JavaScript calls.',
+      'Built a library of 5+ reusable JavaScript components, cutting development time by 25%.',
+      'Resolved 30+ critical client-reported issues, ensuring an 85% client satisfaction rate.',
+      'Reduced OSS risks by 50% while maintaining 100% compatibility by updating third-party libraries.',
+      'Mentored junior developers and interns, fostering confidence and simplifying key concepts in JavaScript, React, Angular, and product knowledge.',
     ],
   },
   {
@@ -186,9 +189,9 @@ const experiences = [
     iconBg: '#fff',
     date: 'January 2023 - March 2023',
     points: [
-      'Worked on developing a PWA using React Vite, Framer, and MUI.',
-      'Worked on Spring Boot and gained an understanding of the CI/CD pipeline.',
-      'Improved development skills and gained modern software insights.',
+      'Delivered a 100% responsive Progressive Web Application using Next.js and Material-UI.',
+      'Improved APIs with unit tests, reducing testing efforts by 75% in Spring Boot.',
+      'Learned CI/CD principles, reducing deployment errors by 10%.',
     ],
   },
   {
@@ -198,11 +201,9 @@ const experiences = [
     iconBg: '#fff',
     date: 'February 2020 - January 2023',
     points: [
-      'Upgraded front-end from Struts and JSP to React.js.',
-      'Conducted code reviews, collaborated with back-end team.',
-      'Developed reusable components for improved code quality, efficiency.',
-      'Resulted in faster rendering, better user experience.',
-      'Upgrade led to 30% increase in user productivity, 50% reduction in page load time.',
+      'Migrated legacy front-end systems from Struts/JSP to React.js, reducing development time by 30% with effective use of design patterns.',
+      'Developed reusable front-end components, improving code maintainability by 40%.',
+      "Enhanced user productivity by 30%, optimizing bank officials' workflow efficiency.",
     ],
   },
 ];
@@ -214,9 +215,14 @@ const technologies = [
     icon: javascript,
   },
   {
-    progress: 50,
-    name: 'Angular',
-    icon: angular,
+    progress: 30,
+    name: 'jQuery',
+    icon: jQuery,
+  },
+  {
+    progress: 35,
+    name: 'TypeScript',
+    icon: typescript,
   },
   {
     progress: 40,
@@ -229,14 +235,9 @@ const technologies = [
     icon: reactjs,
   },
   {
-    progress: 35,
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
-    progress: 30,
-    name: 'jQuery',
-    icon: jQuery,
+    progress: 50,
+    name: 'Angular',
+    icon: angular,
   },
   {
     progress: 30,
@@ -264,6 +265,11 @@ const technologies = [
     icon: netmvc,
   },
   {
+    progress: 45,
+    name: 'Springboot',
+    icon: springboot,
+  },
+  {
     progress: 50,
     name: 'SQL Server',
     icon: sqlserver,
@@ -272,11 +278,6 @@ const technologies = [
     progress: 30,
     name: 'Prisma',
     icon: prisma,
-  },
-  {
-    progress: 45,
-    name: 'Springboot',
-    icon: springboot,
   },
 ];
 
@@ -415,39 +416,39 @@ const strong_points = [
 
 const hobbies = [
   {
-    name: 'Playing Guitar',
+    name: 'Guitar',
     icon: guitar,
   },
   {
-    name: 'Playing Casio',
+    name: 'Casio',
     icon: piano,
   },
   {
-    name: 'Reading English Literature',
+    name: 'English Literature',
     icon: literature,
   },
   {
-    name: 'PC Gaming',
+    name: 'Gaming',
     icon: pcgaming,
   },
   {
-    name: 'Reading about the Cosmos',
+    name: 'Cosmology',
     icon: cosmology,
   },
   {
-    name: 'Carnatic Classical Singing',
+    name: 'Carnatic Classical',
     icon: carnaticClassical,
   },
   {
-    name: ' Watching Sleuth Movies',
+    name: 'Sleuth Movies',
     icon: sleuth,
   },
   {
-    name: 'Following Marvel Movies',
+    name: 'Marvel Movies',
     icon: marvel,
   },
   {
-    name: 'Playing Chess, Carrom, and TT',
+    name: 'Chess, Carrom, and TT',
     icon: chess,
   },
 ];
@@ -480,7 +481,7 @@ const imagesCarousel = [
 
 const social_media = [
   {
-    link: 'https://www.linkedin.com/in/vishnu-parasuramuni-b19427190',
+    link: 'https://www.linkedin.com/in/comaecod/',
     image: linkedin_social,
     name: 'linkedin',
   },

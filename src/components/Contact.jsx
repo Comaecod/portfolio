@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
@@ -22,6 +22,14 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
   const [formVisibility, setFormVisibility] = useState(true);
+
+  useEffect(() => {
+    const formVisibility = localStorage.getItem('formVisible');
+
+    if (formVisibility) {
+      setFormVisibility(JSON.parse(formVisibility));
+    }
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -52,6 +60,7 @@ const Contact = () => {
         () => {
           setLoading(false);
           setFormVisibility(false);
+          localStorage.setItem('formVisible', false);
           setForm({
             name: '',
             email: '',

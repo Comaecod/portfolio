@@ -1,30 +1,27 @@
-import React from 'react';
-import { SectionWrapper } from '../hoc';
-import { portfolioSectionContent, social_media } from '../constants';
+import { social } from '@/constants'
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer>
-      <div className='absolute inset-0 flex justify-center gap-3 card-img_hover'>
-        {social_media.map((social) => (
-          <div
-            key={social.name}
-            className='w-10 h-10 flex justify-center items-center cursor-pointer'
-            onClick={() => window.open(social.link, '_blank')}>
-            <img
-              src={social.image}
-              alt={social.name}
-              title={social.name}
-              className='w-4/5 h-4/5 object-contain'
-            />
-          </div>
-        ))}
+    <footer className="border-t border-gray-800/50 mt-auto">
+      <div className="max-w-5xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="text-xs text-gray-500">
+          Built with Next.js, Tailwind, and React.
+        </p>
+        <div className="flex items-center gap-3">
+          {social.map((s) => (
+            <a
+              key={s.name}
+              href={s.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-500 hover:text-white transition-colors"
+              title={s.name}
+            >
+              {s.icon}
+            </a>
+          ))}
+        </div>
       </div>
-      <p className='text-center text-secondary text-[12px]'>
-        {portfolioSectionContent.footer.content}
-      </p>
     </footer>
-  );
-};
-
-export default SectionWrapper(Footer, '');
+  )
+}

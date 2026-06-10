@@ -136,7 +136,7 @@ export const projects = [
     live: 'https://skksv.vercel.app',
     source: 'https://github.com/Comaecod/quiz-app',
   },
-  {
+  /* {
     name: 'Twitch Clone',
     description: 'Live streaming platform clone built with Next.js, Clerk authentication, and Livekit for real-time video.',
     tags: ['Next.js', 'CockroachDB', 'Clerk', 'Livekit'],
@@ -168,7 +168,7 @@ export const projects = [
     description: 'Backend REST API for jogging data with role-based access, Spring Boot, and MySQL.',
     tags: ['Spring Boot', 'Swagger', 'MySQL'],
     source: 'https://github.com/Comaecod/JogTracker-REST.git',
-  },
+  }, */
 ]
 
 export const education = [

@@ -3,7 +3,7 @@ const testimonials = [
     quote:
       "I've known Vishnu for the past 3 years and had the opportunity to work with him for 1.5 years. He is honest, punctual, dedicated, and someone who consistently takes ownership of his responsibilities. His positive attitude, problem-solving mindset, and willingness to learn make him a valuable person to work with. Beyond his skills, he is a reliable teammate who collaborates well and supports people around him. I truly believe he would be an asset to any organization and a great teammate to work alongside.",
     name: 'Avinash Raj',
-    role: 'Senior Software Engineer, Zenoti',
+    role: 'SDE2, Franklin Templeton',
     image: '/testimonials/avinash.jpeg',
   },
   {

@@ -3,7 +3,7 @@ import './globals.css'
 export const metadata = {
   title: 'Vishnu | Forward Deployment Engineer',
   description:
-    'Full Stack Developer specializing in React, Next.js, Angular, and Three.js. Experienced in building high-performance web applications with modern technologies.',
+    'Full Stack Developer specializing in React, Next.js, and Angular. Experienced in building high-performance web applications with modern technologies.',
   keywords: ['Full Stack Developer', 'React', 'Next.js', 'Angular', 'Portfolio', 'Vishnu'],
   icons: {
     icon: '/favicon.svg',
@@ -11,7 +11,7 @@ export const metadata = {
   },
   openGraph: {
     title: 'Vishnu | Forward Deployment Engineer',
-    description: 'Full Stack Developer specializing in React, Next.js, Angular, and Three.js.',
+    description: 'Full Stack Developer specializing in React, Next.js, and Angular.',
     type: 'website',
     locale: 'en_US',
   },

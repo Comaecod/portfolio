@@ -179,14 +179,14 @@ export const education = [
     grade: '8.88 CGPA',
     institution: 'Sastra University',
     period: '2022 — 2024',
-    description: 'Flexible program balancing academics and work, deepening computer knowledge and analytical skills.',
+    description: 'Flexible program balancing academics and work. Built an attendance management system for the college. Served as a student council member, organized technical events, and mentored junior students.',
   },
   {
     degree: 'Bachelor of Vocation in Software Development',
     grade: '9.64 CGPA',
     institution: 'Jai Hind College',
     period: '2016 — 2019',
-    description: 'Participated in tech and environment initiatives, organized events, achieved top scholarships all three years.',
+    description: 'Secured first prize in inter-college hackathons. Participated in ethical hacking workshops and conducted peer teaching sessions on web development. Achieved top scholarships all three years and organized tech and environment initiatives across campus.',
   },
 ]
 

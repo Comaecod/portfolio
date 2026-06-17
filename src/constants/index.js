@@ -1,31 +1,27 @@
-export const navCategories = [
+export const navItems = [
+  { href: '/about', text: 'About' },
   {
-    label: 'About',
+    text: 'Work',
     children: [
-      { href: '/about', text: 'About Me' },
       { href: '/experience', text: 'Experience' },
-    ],
-  },
-  {
-    label: 'Skills',
-    children: [
-      { href: '/skills', text: 'Technical' },
-      { href: '/soft-skills', text: 'Soft Skills' },
-    ],
-  },
-  {
-    label: 'Work',
-    children: [
       { href: '/projects', text: 'Projects' },
       { href: '/education', text: 'Education' },
       { href: '/testimonials', text: 'Testimonials' },
     ],
   },
   {
-    label: 'More',
+    text: 'Skills',
+    children: [
+      { href: '/skills', text: 'Technical' },
+      { href: '/soft-skills', text: 'Soft Skills' },
+    ],
+  },
+  {
+    text: 'More',
     children: [
       { href: '/hobbies', text: 'Hobbies' },
       { href: '/contact', text: 'Contact' },
+      { href: '/resume', text: 'Resume' },
     ],
   },
 ]
@@ -70,11 +66,12 @@ export const experiences = [
     period: 'Aug 2023 — Feb 2025',
     icon: '💆',
     points: [
-      'Boosted page load times by 70%, achieving a Google Lighthouse score of 95+ through optimized DOM rendering and deferred JavaScript calls.',
-      'Built a library of 5+ reusable JavaScript components, cutting development time by 25%.',
-      'Resolved 30+ critical client-reported issues, ensuring an 85% client satisfaction rate.',
-      'Reduced OSS risks by 50% while maintaining 100% compatibility by updating third-party libraries.',
-      'Mentored junior developers and interns, fostering confidence and simplifying key concepts in JavaScript, React, Angular, and product knowledge.',
+      'Engineered DOM rendering optimizations and deferred JavaScript loading strategies that reduced page load times by 70%, achieving a consistent Google Lighthouse score of 95+ across the SaaS platform.',
+      'Architected a reusable component library of 10+ enterprise-grade UI components in React and Angular, cutting new feature development time by 25% and ensuring design consistency across the product suite.',
+      'Diagnosed and resolved 30+ critical production issues reported by enterprise clients, maintaining an 85% client satisfaction rate through root-cause analysis and permanent fixes.',
+      'Led third-party library audits and upgrades across 50+ dependencies, reducing OSS security risks by 50% while preserving 100% backward compatibility.',
+      'Mentored 4 junior developers and 6 interns through structured code reviews, pair programming sessions, and simplified explanations of React/Angular internals, accelerating their ramp-up to independent contribution.',
+      'Collaborated with product and QA teams in an Agile environment to prioritize bug fixes and feature requests, ensuring on-time delivery across 2-week sprint cycles.',
     ],
   },
   {
@@ -83,9 +80,11 @@ export const experiences = [
     period: 'Jan 2023 — Mar 2023',
     icon: '🤖',
     points: [
-      'Delivered a 100% responsive Progressive Web Application using Next.js and Material-UI.',
-      'Improved APIs with unit tests, reducing testing efforts by 75% in Spring Boot.',
-      'Learned CI/CD principles, reducing deployment errors by 10%.',
+      'Delivered a 100% responsive Progressive Web Application from the ground up using Next.js and Material-UI, achieving offline-capability and near-native performance on mobile devices.',
+      'Refactored REST API endpoints in Spring Boot with comprehensive unit test coverage using JUnit, reducing regression testing efforts by 75% and catching edge-case bugs pre-deployment.',
+      'Implemented CI/CD pipelines using GitHub Actions for automated testing, linting, and deployment — reducing deployment errors by 10% and cutting release cycle time from days to hours.',
+      'Integrated frontend state management with React Context and SWR for efficient data fetching, caching, and optimistic UI updates across the application.',
+      'Participated in daily stand-ups and sprint retrospectives, collaborating closely with a cross-functional team of designers and backend engineers to ship features on schedule.',
     ],
   },
   {
@@ -94,9 +93,12 @@ export const experiences = [
     period: 'Feb 2020 — Jan 2023',
     icon: '🏢',
     points: [
-      'Migrated legacy front-end systems from Struts/JSP to React.js, reducing development time by 30% with effective use of design patterns.',
-      'Developed reusable front-end components, improving code maintainability by 40%.',
-      "Enhanced user productivity by 30%, optimizing bank officials' workflow efficiency.",
+      'Led the migration of enterprise banking portals from legacy Struts/JSP to modern React.js architecture, applying MVC and container-presenter design patterns to reduce development time by 30%.',
+      'Designed and built a shared component ecosystem of 15+ reusable UI elements (data tables, form controls, modals, charts) consumed by 5+ project teams, improving code maintainability by 40%.',
+      'Optimized complex banking workflows with virtualized lists, lazy-loaded routes, and memoized selectors, boosting bank officials\' daily task efficiency by 30%.',
+      'Partnered with business analysts and stakeholders to translate regulatory requirements into technical specifications, delivering compliant features across multiple release cycles.',
+      'Enforced code quality standards through ESLint configuration, peer code reviews, and comprehensive documentation, reducing post-release defects by 20%.',
+      'Conducted monthly knowledge-sharing sessions on JavaScript ES6+, React hooks, and performance best practices, upskilling 20+ team members across projects.',
     ],
   },
 ]

@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { navCategories } from '@/constants'
+import { navItems } from '@/constants'
 
 function ChevronDown() {
   return (
@@ -63,34 +63,44 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <nav className="hidden sm:flex items-center gap-1">
-          {navCategories.map((cat) => (
-            <div key={cat.label} className="relative group">
-              <button
-                onClick={() => setOpenCategory(openCategory === cat.label ? null : cat.label)}
-                className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-400 hover:text-white transition-colors rounded-lg hover:bg-white/5"
+          {navItems.map((item) =>
+            item.href ? (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`nav-link px-3 py-2 ${isActive(item.href) ? 'active' : ''}`}
               >
-                {cat.label}
-                {openCategory === cat.label ? <ChevronUp /> : <ChevronDown />}
-              </button>
-              {(openCategory === cat.label || undefined) && (
-                <div className="absolute top-full left-0 mt-1 bg-[#1d1836] border border-gray-800 rounded-lg py-1 min-w-[140px] shadow-xl">
-                  {cat.children.map((child) => (
-                    <Link
-                      key={child.href}
-                      href={child.href}
-                      className={`block px-4 py-2 text-sm ${
-                        isActive(child.href)
-                          ? 'text-white bg-[#915EFF]/10'
-                          : 'text-gray-400 hover:text-white hover:bg-white/5'
-                      }`}
-                    >
-                      {child.text}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
+                {item.text}
+              </Link>
+            ) : (
+              <div key={item.text} className="relative">
+                <button
+                  onClick={() => setOpenCategory(openCategory === item.text ? null : item.text)}
+                  className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-400 hover:text-white transition-colors rounded-lg hover:bg-white/5"
+                >
+                  {item.text}
+                  {openCategory === item.text ? <ChevronUp /> : <ChevronDown />}
+                </button>
+                {(openCategory === item.text || undefined) && (
+                  <div className="absolute top-full left-0 mt-1 bg-[#1d1836] border border-gray-800 rounded-lg py-1 min-w-[150px] shadow-xl">
+                    {item.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className={`block px-4 py-2 text-sm ${
+                          isActive(child.href)
+                            ? 'text-white bg-[#915EFF]/10'
+                            : 'text-gray-400 hover:text-white hover:bg-white/5'
+                        }`}
+                      >
+                        {child.text}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )
+          )}
         </nav>
 
         {/* Mobile hamburger */}
@@ -109,34 +119,50 @@ export default function Navbar() {
       {menuOpen && (
         <div className="sm:hidden bg-[#0a0a1a]/95 backdrop-blur border-b border-gray-800/50 max-h-[70vh] overflow-y-auto">
           <nav className="flex flex-col px-4 py-3 gap-1">
-            {navCategories.map((cat) => (
-              <div key={cat.label}>
-                <button
-                  onClick={() => setOpenCategory(openCategory === cat.label ? null : cat.label)}
-                  className="flex items-center justify-between w-full px-3 py-2.5 text-sm font-medium text-gray-300"
+            {navItems.map((item) =>
+              item.href ? (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`block px-3 py-2.5 rounded-lg text-sm font-medium ${
+                    isActive(item.href)
+                      ? 'text-white bg-[#915EFF]/10'
+                      : 'text-gray-300'
+                  }`}
+                  onClick={() => setMenuOpen(false)}
                 >
-                  {cat.label}
-                  {openCategory === cat.label ? <ChevronUp /> : <ChevronDown />}
-                </button>
-                {openCategory === cat.label && (
-                  <div className="ml-3 flex flex-col gap-0.5">
-                    {cat.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        className={`block px-3 py-2 rounded-lg text-sm ${
-                          isActive(child.href)
-                            ? 'bg-[#915EFF]/10 text-white'
-                            : 'text-gray-400 hover:text-white hover:bg-white/5'
-                        }`}
-                      >
-                        {child.text}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
+                  {item.text}
+                </Link>
+              ) : (
+                <div key={item.text}>
+                  <button
+                    onClick={() => setOpenCategory(openCategory === item.text ? null : item.text)}
+                    className="flex items-center justify-between w-full px-3 py-2.5 text-sm font-medium text-gray-300"
+                  >
+                    {item.text}
+                    {openCategory === item.text ? <ChevronUp /> : <ChevronDown />}
+                  </button>
+                  {openCategory === item.text && (
+                    <div className="ml-3 flex flex-col gap-0.5">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className={`block px-3 py-2 rounded-lg text-sm ${
+                            isActive(child.href)
+                              ? 'text-white bg-[#915EFF]/10'
+                              : 'text-gray-400 hover:text-white hover:bg-white/5'
+                          }`}
+                          onClick={() => setMenuOpen(false)}
+                        >
+                          {child.text}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )
+            )}
           </nav>
         </div>
       )}

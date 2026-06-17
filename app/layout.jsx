@@ -5,6 +5,10 @@ export const metadata = {
   description:
     'Full Stack Developer specializing in React, Next.js, Angular, and Three.js. Experienced in building high-performance web applications with modern technologies.',
   keywords: ['Full Stack Developer', 'React', 'Next.js', 'Angular', 'Portfolio', 'Vishnu'],
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+  },
   openGraph: {
     title: 'Vishnu | Forward Deployment Engineer',
     description: 'Full Stack Developer specializing in React, Next.js, Angular, and Three.js.',

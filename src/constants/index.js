@@ -37,7 +37,7 @@ export const hero = {
 export const about = {
   title: 'About Me 👨‍💻',
   content:
-    'I am a Forward Deployment Engineer at heart — combining full-stack development with modern deployment strategies, AI integration, and infrastructure thinking. Since February 2026, I have been managing a 34-acre CBSE school campus as an Executive Assistant at Sri Kanchi Kamakoti Sankara Vidyalaya, Podili, while building a production-grade school management platform (skksv.vercel.app) that handles assessments, grading, staff directories, image galleries, real-time notifications, and an AI assistant. I believe AI is the future of software engineering, and I am seeking a role where I can bring full-stack expertise, deployment engineering, and AI-driven solutions together.',
+    'I am a Forward Deployment Engineer at heart — combining full-stack development with modern deployment strategies, AI integration, and infrastructure thinking. Since February 2026, I have been managing a 34-acre CBSE school campus as an Executive Assistant at Sri Kanchi Kamakoti Sankara Vidyalaya, Podili, while building a production-grade school management platform that handles assessments, grading, staff directories, image galleries, real-time notifications, and an AI assistant. I believe AI is the future of software engineering, and I am seeking a role where I can bring full-stack expertise, deployment engineering, and AI-driven solutions together.',
   services: [
     { title: 'React', icon: '⚛️' },
     { title: 'Next.js', icon: '▲' },
@@ -49,7 +49,7 @@ export const experiences = [
   {
     title: 'Executive Assistant & Full Stack Developer',
     company: 'Sri Kanchi Kamakoti Sankara Vidyalaya',
-    period: 'Feb 2026 — Present',
+    period: 'Feb 2025 — Present',
     icon: '🏫',
     points: [
       'Manage a 34-acre CBSE school campus independently — handling administration, faculty coordination, event planning, and operations without a director on-site.',
